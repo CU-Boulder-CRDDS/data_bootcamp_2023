@@ -1,0 +1,50 @@
+I"¬<h1 id="r-resources">R Resources</h1>
+
+<h2 id="cheatsheets-and-reference-guides">Cheatsheets and Reference Guides</h2>
+
+<ul>
+  <li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dyplyr cheat sheet</a> (data wrangling)</li>
+  <li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot cheat sheet</a> (data visualization)</li>
+  <li><a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R Markdown Cheatsheet</a> (reproducibility and communication of results)</li>
+  <li><a href="https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf">Base R cheat sheet</a></li>
+  <li><a href="https://cran.r-project.org/doc/contrib/Short-refcard.pdf">R Reference Card</a></li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<ul>
+  <li><a href="http://rseek.org">rseek</a> (search most online R documentation and discussion forums)</li>
+  <li><a href="http://www.burns-stat.com/documents/books/the-r-inferno">R inferno</a> (useful for troubleshooting)</li>
+</ul>
+
+<h2 id="data-visualization-guides-and-tutorials">Data Visualization Guides and Tutorials</h2>
+
+<ul>
+  <li><a href="http://www.sthda.com/english/wiki/qplot-quick-plot-with-ggplot2-r-software-and-data-visualization">qplots tutorial</a></li>
+  <li><a href="http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization">Histograms/Density plots tutorial</a></li>
+  <li><a href="http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization">Boxplots/Violin plots tutorial</a></li>
+  <li><a href="http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization">Scatterplots tutorial</a></li>
+</ul>
+
+<h2 id="general-guides-and-courses">General guides and courses</h2>
+
+<ul>
+  <li><a href="http://www.datacarpentry.org/R-genomics/01-intro-to-R.html">Data Carpentry</a></li>
+  <li><a href="https://cran.r-project.org/manuals.html">R manuals by CRAN</a></li>
+  <li><a href="https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf">R for Beginners</a> by Emmanuel Paradis</li>
+  <li><a href="https://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf">The R Guide</a> by W.J. Owen</li>
+  <li><a href="https://cran.r-project.org/doc/contrib/Lam-IntroductionToR_LHL.pdf">An Introduction to R</a> by Longhow Lam</li>
+  <li><a href="http://www.cookbook-r.com">Cookbook for R</a></li>
+  <li><a href="http://adv-r.had.co.nz/">Advanced R</a> by Hadley Wickham</li>
+  <li><a href="https://www.coursera.org/learn/r-programming">R Programming in Coursera</a></li>
+  <li><a href="http://r4ds.had.co.nz">R for Data Science</a></li>
+</ul>
+
+<h2 id="video-tutorials">Video Tutorials</h2>
+
+<ul>
+  <li><a href="https://www.youtube.com/user/TheLearnR">YouTube R channel</a></li>
+  <li><a href="http://jeromyanglim.blogspot.co.uk/2010/05/videos-on-data-analysis-with-r.html">Various R videos</a></li>
+</ul>
+
+:ET

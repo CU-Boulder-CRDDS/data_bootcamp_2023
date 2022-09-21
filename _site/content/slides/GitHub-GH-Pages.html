@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Teaching Workshops with GitHub Pages</title>
+
+		<meta name="description" content="Presentation on 1-28-2021 at CU Boulder Libraries">
+		<meta name="author" content="Phil White">
+
+		<meta name="reveal" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="creator" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/bootcamp_style.css" id="theme">
+
+		<!-- emoji style -->
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+		<style>
+
+		#left_slide {
+			text-align: left;}
+
+		</style>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background-color='#A2B5CD'>
+					<h4 style="text-align: left">Git, GitHub, & GitHub Pages Oh My!</h4>
+					<p style="text-align: left;; font-size: 1em">2021 CRDDS Data Science Bootcamp</p><br><br><br>
+						<div style="text-align: right">
+							<p style='line-height: 1'><strong>Phil White </strong></p>
+							<p style='font-size: .75em; line-height: 1'>Earth, Environment & Geospatial Librarian</p>
+							<p style='font-size: .75em; line-height: 1'>August 8, 2021</p>
+							<p><a href='https://cu-boulder-crdds.github.io/data_bootcamp' target='_blank' style='font-size: .75em'>cu-boulder-crdds.github.io/data_bootcamp</a></p>
+						</div>
+				</section>
+
+				<section>
+          <div style="text-align: left;">
+            <h3>What you'll find here:</h3><br>
+						<ul>
+							<div class='fragment'>
+								<li>Git Overview/Review</li>
+									<ul>
+										<li>Git basic concepts</li>
+										<li>GitHub</li><br>
+									</ul>
+							</div>
+							<div class='fragment'>
+								<li>GitHub Pages</li>
+									<ul>
+										<li>A bit of Markdown</li>
+										<li>Why use this?</li>
+										<li>Example: Phil's site</li>
+									</ul>
+								</div>
+							</ul>
+          </div>
+        </section>
+
+				<section>
+					<section data-background-color='#A2B5CD'>
+						<h2 style='color:white'>Git & GitHub <i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i></h2>
+					</section>
+
+					<section>
+						<div id='left_slide'>
+							<h3>What is "Git"?</h3>
+							<ul>
+								<li class='fragment'><a href='https://git-scm.com/' target='_blank'>Git</a> = version control software</li>
+								<li class='fragment'>Free and open source</li>
+								<li class='fragment'>Git is for your computer—you run it locally</li>
+								<li class='fragment'>Project-specific repositories hold past versions of files</li>
+								<li class='fragment'>Mostly a command-line tool</li>
+								<li class='fragment'>Very useful for project managment</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div id='left_slide'>
+							<h3>What is GitHub?</h3>
+								<ul>
+									<li class='fragment'>GitHub is a code sharing website</li>
+									<li class='fragment'><a href='https://github.com/join' target='_blank'>Create an account!</a></li>
+									<li class='fragment'>Very popular with people interested in computer programming</li>
+									<li class='fragment'>Super for collaboration</li>
+									<li class='fragment'>Free, and pretty easy <span class='fragment'>(with learning curve)</span></li>
+						</div>
+					</section>
+
+					<section>
+						<div id='left_slide'>
+							<h3>What is GitHub?</h3>
+								<ul>
+									<li class='fragment'>Primary purpose is back up & version control</li>
+									<li class='fragment'>Code for a project lives in a "repository"</li>
+									<li class='fragment'><a href='https://github.com/outpw/geo_meta' target='_blank'>For example...</a></li>
+								</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3 style='font-style:italic'>Intimidating?</h3><br>
+						<h3 class='fragment'>I get it.</h3><br>
+						<p class='fragment'>Here's a <a href='https://cu-boulder-crdds.github.io/data_bootcamp/GH_Pages_Materials/GH-glossary.html' target='_blank'>glossary</a>.</p>
+					</section>
+				</section>
+
+				<section>
+
+					<section data-background-color='#A2B5CD'>
+						<h2 style='color:white'>GitHub Pages <i class="em em-globe_with_meridians" aria-role="presentation" aria-label="GLOBE WITH MERIDIANS"></i></h2>
+					</section>
+
+					<section>
+						<div id='left_slide'>
+							<h3>What is GitHub Pages?</h3>
+							<ul>
+								<li class='fragment'><a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>: static webpages hosted on GitHub.</li>
+								<li class='fragment'>Free! Easy configuration!</li>
+								<li class='fragment'>Add webpages and associated content to a repo...</li>
+								<li class='fragment'>...click a couple of buttons...</li>
+								<li class='fragment'>...and BAM! you have a website.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+	            <h3>Don't want to deal with HTML/CSS/JS?</h3><br>
+							<h3 class='fragment' style='font-style:italic'>No problem!</h3><br>
+							<h3 class='fragment fade-right'>Enter <a href='https://jekyllrb.com/' target='_blank'>JEKYLL</a></h3>
+	        </section>
+
+					<section>
+						<div id=left_slide>
+							<h3>Jekyll</h3>
+							<ul>
+								<li class='fragment'>Static site generator</li>
+								<li class='fragment'>Lots of templates (aka themes)</li>
+								<li class='fragment'>Transforms Markdown docs to sites</li>
+								<li class='fragment'>GitHub Pages are powered by Jekyll</li>
+								<li class='fragment'>Once deployed, create new pages using <a href='https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet' target='_blank'>Markdown</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<div id=left_slide>
+							<div  data-markdown>
+								### Example 1
+								```
+								# H1
+								## H2
+								### H3
+								```
+								# H1
+								## H2
+								### H3
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div id=left_slide>
+							<div  data-markdown>
+								### Example 2
+								```
+								- bullet 1
+								- bullet 2
+								- bullet 3
+								```
+								- bullet 1
+								- bullet 2
+								- bullet 3
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div id=left_slide>
+							<div  data-markdown>
+								### Example 3
+								```
+								### About
+								Hi, my name is Phil. But my friends call me Chainsaw.
+								1. Pizza is my favorite food.
+								2. I like to drink cold ones.
+								```
+								### About
+								Hi, my name is Phil. But my friends call me Chainsaw.
+								1. Pizza is my favorite food.
+								2. I like to drink cold ones.
+							</div>
+						</div>
+					</section>
+
+					<section data-background-color='#D2691E'>
+						<h2 style='color:white'>How do I use GitHub Pages? <i class="em em-thinking_face" aria-role="presentation" aria-label="THINKING FACE"></i></h2>
+					</section>
+
+					<section id='left_slide'>
+						<h3>Examples:</h3>
+						<ul class='fragment'>
+							<li><a href='https://outpw.github.io' target='_blank'>A basic page</a></li><br>
+							<li><a href='https://cu-boulder-crdds.github.io/data_bootcamp/' target='_blank'>A workshop site</a></li>
+						</ul>
+					</section>
+
+					<section id='left_slide'>
+						<h2>Why should I use this?</h2>
+						<ul>
+							<li class='fragment'>It's <i class="em em-cool" aria-role="presentation" aria-label="SQUARED COOL"></i></li>
+							<li class='fragment'>It's <i class="em em-free" aria-role="presentation" aria-label="SQUARED FREE"></i></li>
+							<li class='fragment'>It's open! <i class="em em-unlock" aria-role="presentation" aria-label="OPEN LOCK"></i></li>
+							<li class='fragment'>It's highly customizable. <i class="em em-nerd_face" aria-role="presentation" aria-label="NERD FACE"></i></li>
+							<li class='fragment'>It's easy! <i class="em em---1" aria-role="presentation" aria-label="THUMBS UP SIGN"></i></li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background-color='#A2B5CD'>
+					<div style='color:white'>
+						<h3 style='font-style:italic; color:white'>Let's check it out! <i class="em em-stars" aria-role="presentation" aria-label="SHOOTING STAR"></i></h3><br>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

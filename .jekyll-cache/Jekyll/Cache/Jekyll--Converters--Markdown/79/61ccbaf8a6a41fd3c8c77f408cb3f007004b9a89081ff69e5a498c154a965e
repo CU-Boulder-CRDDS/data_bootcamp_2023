@@ -1,0 +1,143 @@
+I"�<h1 id="time-to-press-some-buttons">Time to press some buttons!</h1>
+
+<h3 id="overview">Overview</h3>
+<p>During this hands-on portion, you will fork a repository over to your own GitHub account, activate it as a website tied to your GitHub username, and work on adding new content and customizations.</p>
+
+<h2 id="fork-the-sample-template-repository">Fork the sample template repository</h2>
+
+<p class="label label-step">Step 1</p>
+<p>Go to <a href="https://github.com/CU-Boulder-CRDDS/pages-sample">https://github.com/CU-Boulder-CRDDS/pages-sample</a></p>
+
+<p class="label label-step">Step 2</p>
+<p>Click the Fork button to make a copy of this repository on your own GitHub account:
+<img src="../content/img/pages1.png" alt="Fork it" /></p>
+
+<p>Head over to your account to view your fork of this repo.</p>
+
+<h2 id="edit-your-_configyml-file">Edit your _config.yml file</h2>
+
+<p class="label label-step">Step 1</p>
+<p>Click on the <code class="highlighter-rouge">_config.yml</code> file to open it.<br />
+<img src="../content/img/pages2.png" alt="Open Config" /></p>
+
+<p class="label label-step">Step 2</p>
+<p>Click the edit button.
+<img src="../content/img/pages3.png" alt="Edit" /></p>
+
+<p class="label label-step">Step 3</p>
+<p>Change the url field to match your username. On line 28, change:<br />
+<code class="highlighter-rouge">https://CU-Boulder-CRDDS.github.io</code> to <code class="highlighter-rouge">https://your-user-name.github.io</code>
+<img src="../content/img/pages4.png" alt="Change url" /></p>
+
+<p class="label label-step">Step 4</p>
+<p>Scroll down, add a commit message, and click Commit to save the changes:
+<img src="../content/img/pages5.png" alt="Commit" /></p>
+
+<h2 id="spin-up-your-site">“Spin up” your site!</h2>
+
+<p class="label label-step">Step 1</p>
+<p>Go to your repository Settings:
+<img src="../content/img/pages6.png" alt="Settings" /></p>
+
+<p class="label label-step">Step 2</p>
+<p>Click the Pages tab at bottom left:
+<img src="../content/img/pages7.png" alt="Pages" /></p>
+
+<p class="label label-step">Step 3</p>
+<p>Under source, switch the branch to main and click save:
+<img src="../content/img/pages8.png" alt="branch" /></p>
+
+<h3 id="your-site-is-building-this-can-take-up-to-a-few-minutes-head-over-to-your-user-namegithubiopages-sample-in-a-new-browser-tab-to-see-the-result">Your site is building! This can take up to a few minutes. Head over to: [your-user-name].github.io/pages-sample in a new browser tab to see the result.</h3>
+
+<h2 id="playtime-now-lets-work-through-some-basic-customizations">Playtime! Now let’s work through some basic customizations</h2>
+
+<p>First, open up your <code class="highlighter-rouge">_config.yml</code> file and modify the contact info, title, and description: <br />
+<img src="../content/img/pages9.png" alt="Mods" /></p>
+
+<h3 id="lets-make-some-changes-to-the-homepage">Let’s make some changes to the homepage:</h3>
+<p>Now let’s make some changes to the content of the home page.</p>
+
+<p class="label label-step">Step 1</p>
+<p>Open <code class="highlighter-rouge">index.md</code> and click Edit.</p>
+
+<p class="label label-step">Step 2</p>
+<p>Take a minute to modify the content of the homepage. Add some <a href="http://fillerama.io/" target="_blank">dummy text</a> and perhaps a link. Links look like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[dummy text](http://fillerama.io/)
+</code></pre></div></div>
+
+<h3 id="now-lets-talk-about-layouts">Now let’s talk about Layouts:</h3>
+<p>You’ve figured out by now that your content pages are saved as <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a> (.md) files.</p>
+
+<p>Information like the layout type, title, and navigation (if applicable) are set in the front matter of the page’s markdown file.</p>
+
+<p>It looks like this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+title: Home
+---
+</code></pre></div></div>
+<p>The layouts available will depend on which theme you are using. For this example, we are using the default Jekyll theme, called Minima.</p>
+
+<p>When GitHub builds your site, it references the theme indicated in the <code class="highlighter-rouge">_config.yml</code> file, which indicates which theme you are using (we will discuss themes more in a minute).</p>
+
+<p>Take a look now at the <a href="https://github.com/jekyll/minima" target="_blank">repo that contains the Minima theme</a>. Open the <code class="highlighter-rouge">_layouts</code> folder and you can see you have a few different layouts to choose from.</p>
+
+<p><strong>Change the layout of your <code class="highlighter-rouge">index.md</code> file to <code class="highlighter-rouge">home</code></strong></p>
+
+<p class="note">Tread lightly here… not all themes support different layouts. Many only have one page layout: <code class="highlighter-rouge">default</code></p>
+
+<p>Open your index page in the editor and change the front matter to this:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: home
+title: Home
+---
+</code></pre></div></div>
+<p>Enter a commit message and click Commit. Let your site reload and few the results…</p>
+
+<p><em>It’s changed! What is all this “Posts” stuff?</em></p>
+
+<h3 id="lets-talk-about-posts">Let’s talk about Posts!</h3>
+
+<p>Jekyll is a popular platform for blogging, and the “post” layout is fairly common across different Jekyll themes.</p>
+
+<p>In your repository, open the <code class="highlighter-rouge">_posts</code> folder and you can see that I’ve provided several example posts.</p>
+
+<p class="note">Posts must be saved in the <code class="highlighter-rouge">_posts</code> folder, and they must always be formatted as <code class="highlighter-rouge">yyyy-mm-dd-title-of-post.md</code>. This is how they show up properly in the feed.</p>
+
+<p>You must also set the layout as ‘post’ and provide the a category in the front matter, the value of which can be whatever you want. Date is also good:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: Something smart and academic
+date: 2021-08-03
+categories: science
+---
+</code></pre></div></div>
+
+<h3 id="adjusting-themes">Adjusting Themes</h3>
+
+<p>GitHub Pages supports several <a href="https://pages.github.com/themes/" target="_blank">Standard Themes</a></p>
+
+<p><strong>Try changing the theme of your site to one of these standard themes.</strong></p>
+
+<p>Open your <code class="highlighter-rouge">_config.yml</code> file, got to line 33 and change:
+<code class="highlighter-rouge">theme: minima</code> to <code class="highlighter-rouge">theme: jekyll-theme-architect</code></p>
+
+<p>Commit the change and see what happens upon build…</p>
+
+<p><strong>What went wrong?</strong></p>
+
+<p class="warn">When switching themes, pay particular attention to the layouts! You may need to check the theme repo to see if it uses the same layouts your pages or posts use (see _layouts folder). If not, you may need to change layouts of your markdown files.</p>
+
+<p><strong>Fix it</strong> Change the layout of your <code class="highlighter-rouge">index.md</code> file to default.</p>
+
+<h3 id="2-remote-themes"><em class="circle circle-blue">2</em> Remote Themes</h3>
+
+<p>In addition to the standard themes, you can also use “Remote Themes”, of which there are hundreds.<br />
+<a href="https://github.com/topics/jekyll-theme" target="_blank">GitHub Pages Remote Themes</a></p>
+
+<p class="warn">If you’re relying on remote themes, your mileage may vary here! Be prepared to troubleshoot.</p>
+
+<p><strong>Truth:</strong> If you want to use themes beyond the standard GH Pages themes, it is best to clone a theme’s repository, work on it locally, and push it to a new remote repository on your GitHub account. This will give you further control over the look and feel of your site and a lot of flexibility…</p>
+
+<p>See <a href="../GH_Pages_Materials/GH-Pages-Advanced">Advanced</a></p>
+:ET

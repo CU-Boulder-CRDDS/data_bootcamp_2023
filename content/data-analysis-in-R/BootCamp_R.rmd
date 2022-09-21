@@ -1,0 +1,1204 @@
+---
+title: "CU Boulder Graduate Student Boot Camp"
+authors: Jacob Holster, Adapted from Nick Varberg and Michael Ramsey
+date: "August 4th, 2021"
+output:
+  html_document: default
+  pdf_document: default
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+With support from the Center for Research Data and Digital Scholarship
+and the University of Colorado **Boulder**
+
+This document contains an introduction to the installation of R, how to
+install packages, and an introduction to object-based coding concepts.
+If you are having trouble downloading R and installing your first
+packages, please view the optional check in assessment at
+<https://jayholster.shinyapps.io/RLevel0Assessment/>
+
+This is an R Markdown document (.Rmd for file extensions). R Markdown is
+a simple formatting syntax for authoring HTML, PDF, and MS Word
+documents that can include blocks of code, as well as space for
+narrative to describe the code. For more details on using R Markdown see
+<http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that
+includes both content as well as the output of any embedded R code
+chunks within the document. You can quickly insert chunks into your R
+Markdown file with the keyboard shortcut Cmd + Option + I (Windows Ctrl
++ Alt + I).
+
+```{r}
+
+```
+
+### Best Practices
+
+-   Use R markdown documents for flexibility with the output.
+-   Insert narrative in your document in a way that makes sense to you.
+-   Split your code up into chunks
+-   Use a project specific directory
+-   Save your work frequently.
+
+### Agenda
+
+-   **Document Set Up**
+-   **Understanding and Examining Datasets**
+-   **Data Wrangling**
+-   **Data Visualization**
+-   **Assessment**
+-   **References**
+
+# R Foundations
+
+R is one of the most popular programming languages for data science.
+This introductory course aims to provide participants an opportunity to
+make a start towards learning R for a variety of data science tasks,
+include statistical analysis, data visualization, natural language
+processing, and others.
+
+By the end of this course and the conjoining set of short courses over
+the semester, among several other skills, you will have resources to use
+R to visualize distributions of data across categorical groups:
+
+```{r, echo = TRUE, message = FALSE}
+library(ggstatsplot)
+data <- read.csv('musicclassintentions.csv')
+
+ggbetweenstats(
+  data = data,
+  x = Level,
+  y = intentions,
+  title = "Distribution of Intentions to Sign Up for Music Across Grade Level"
+)
+```
+
+Calculate correlation coefficients, and visualize relationships between
+your data:
+
+```{r, echo = TRUE, message = FALSE}
+library(psych)
+library(tidyverse)
+
+variablelist <- data %>% select(intentions, values, needs, parentsupport, SESComp)
+psych::pairs.panels(variablelist, 
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB",
+             density = TRUE,  # show density plots
+             ellipses = TRUE, 
+             lm = TRUE# show correlation ellipses
+             )
+```
+
+Fit General Linear Models (GLM) and produce publishable tables:
+
+```{r, echo = TRUE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(broom)
+
+tidy(lm(intentions ~ SESComp + parentsupport + needs + values, data=data)) %>%
+  kable(caption = "Estimates for a Model Fitted to Estimate Variation in Music Elective Intentions.",
+    col.names = c("Predictor", "B", "SE", "t", "p"),
+    digits = c(0, 2, 3, 2, 3))
+```
+
+Understand and utilize logistic and linear regression analysis.
+Additionally, you will be able to fit, interpret, and visualize
+Structural Equation Models (SEM):
+
+```{r, echo = FALSE, message = FALSE}
+library(lavaan)
+library(semPlot)
+
+model <- '
+  # regressions
+    needs ~ parentsupport
+    values ~ needs + parentsupport + peersupport
+    intentions ~ values + needs + SESComp' 
+
+fit <- sem(model, data=data)
+
+semPaths(fit, what = "path", whatLabels = "std", style = "lisrel", edge.label.cex = .9, rotation = 2, curve = 3, layoutSplit = FALSE, normalize = FALSE, height = 9, width = 6.5, residScale = 10)
+```
+
+In addition to each of these tasks, you will also be introduced to both
+text and network analysis in R. There will be an informal assessment
+tied to each chapter so you can test and apply your skills as you move
+through the book.
+
+## Getting Started with R and RStudio
+
+Before we get ahead of ourselves, take a few minutes to download and
+install both R and RStudio.
+
+Where R is a programming language, RStudio is an integrated development
+environment (IDE) which enables users to efficiently access and view
+most facets of the program in a four pane environment. These include the
+source, console, environment and history, as well as the files, plots,
+packages and help. The console is in the lower-left corner, and this is
+where commands are entered and output is printed. The source pane is in
+the upper-left corner, and is a built in text editor. While the console
+is where commands are entered, the source pane includes executable code
+which communicates with the console. The environment tab, in the
+upper-right corner displays an list of loaded R objects. The history tab
+tracks the user's keystrokes entered into the console. Tabs to view
+plots, packages, help, and output viewer tabs are in the lower-right
+corner.
+
+Where SPSS and other menu based analytic software are limited by user
+input and installed software features, R operates as a mediator between
+user inputs and open source developments from our colleagues all over
+the world. This affords R users a certain flexibility. However, it takes
+a few extra steps to appropriately launch projects. Regardless of your
+needs with R, you will likely interact with the following elements of
+document set up.
+
+Download R from
+[\<https://cran.r-project.org/\>](https://cran.r-project.org/){.uri}
+Choose your operating system (Windows, MacOS, or Linux) and download as
+you would any other program.
+
+Download the free version of RStudio for your OS from
+[\<https://www.rstudio.com/products/rstudio/download/\>](https://www.rstudio.com/products/rstudio/download/){.uri}
+Follow prompts to install.
+
+From the cran project (link for full source:
+[\<https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf\>](https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf){.uri}):
+"When R is running, variables, data, functions, results, etc, are stored
+in the active memory of the computer in the form of objects which have a
+name. The user can do actions on these objects with operators
+(arithmetic, logical,comparison, . . .) and functions (which are
+themselves objects)."
+
+### Learning to Read Code
+
+> "Numquam ponenda est pluralitas sine necessitate. Plurality is never
+> to be posited without necessity."
+>
+> William of Occam, circa 1495
+
+The most formidable challenge many new R users face is learning to code.
+While coding can seem daunting at first, it is important to remember
+that all coding tasks simply involve solutions to problems the user
+identifies. No matter how difficult the problem, there are always a lot
+of solutions to each problems, and someone else has always encountered
+the solution, and likely has posted it to a forum. Occams Razor (i.e.,
+the solution with the least amount of assumptions is the best) helps you
+identify the problems to solve as you interact with code. For new users,
+your breakthrough moment where you start to feel like a programmer might
+come from a well-worded google search and a focused effort to solve an
+issue with the R programming language. It is, indeed, a language, so
+half of the battle is learning to read code in a manner that is
+meaningful to you. Throughout this book, you will be provided with
+tutorials and suggestions for reading the code you interact with.
+
+### Practices in Reproducability
+
+It is important --- whether you are working alone or with others --- to
+adopt a collaboration mindset. This value is clearly important when
+working with other statistical collaborators or with domain experts who
+do not have experience in R. Even experienced users might become
+confused when examining a peer's code. The same effect may occur if you
+return to a project after many months, and find yourself lost in your
+own code. As such, I recommend utilizing R markdown files (File -\> New
+File -\> R Markdown) and comments (\#) to provide notes to yourself and
+others who might interact with your code. For instance, this is an R
+Markdown document (.Rmd for file extensions). R Markdown is a simple
+formatting syntax for authoring HTML, PDF, and MS Word documents that
+can include blocks of code, as well as space for narrative to describe
+the code. For more details on using R Markdown see
+<http://rmarkdown.rstudio.com>.
+
+When you click the \*\*Knit\*\* button a document will be generated that
+includes both content as well as the output of any embedded R code
+chunks within the document. You can quickly insert chunks into your R
+Markdown file with the keyboard shortcut Cmd + Option + I (Ctrl + Alt +
+I for Windows users). Comments can be utilized within code chunks, and
+are not considered a functioning part of the code to R.
+
+```{r}
+x <- 10 # This is an example of a comment.
+```
+
+No matter what coding format you choose, insert narrative into your
+document in a way that makes sense to you. It may be helpful to split
+your code up into small, easy to digest chunks as to not become
+overwhelmed when examining your work. Lastly, it is also helpful to use
+a project specific directory and to frequently save your work.
+
+## Coding in R
+
+### Set Your Working Directory
+
+When you first use R follow this procedure for Windows and MAC OSX:
+
+Create a sub-directory (folder), "R" for example, in your "Documents"
+folder. This sub-folder, also known as working directory, will be used
+by R to read and save files. Think of it as a downloads folder for R
+only.
+
+You can specify your working directory to R in a few ways. Click the
+session at the top of your screen and choose your directory. It might
+also be useful to change the directory using coding. To do this, use the
+function 'setwd', and then enter the location of your directory.
+
+```{r workingdirectory}
+#setwd('Users/jacob/R/R Series')
+```
+
+### Operators
+
+If this is your first foray into coding, you might think of it as a
+conversation you are having with R about a problem you are trying to
+solve. You can talk to R using numerical digits and text. Operators are
+the symbols that connect your numbers or words with mathematical (e.g.
+addition), relational (e.g.\>=), and logical manipulations (e.g.
+conditional coding)
+
+To start coding with mathematical operators, enter a number in the code
+box below, then click the run button.
+
+```{r number}
+
+```
+
+Now, pick a set of two numerals to sum, placing an addition sign between
+them. Then click the run button.
+
+```{r mathematical}
+7+2
+```
+
+Base R comes with working mathematical operators for addition (+),
+subtraction (-), multiplication (\*), division (/), and exponents (\^).
+I've left an example for you below. Try making your own.
+
+```{r multiple objects}
+7+2-10*40
+```
+
+### Functions
+
+Functions allow pieces of your input to be connected. For example, the
+sum function adds a set of numbers which are specified within
+parenthesis as demonstrated below.
+
+```{r sum function}
+sum(2,4)
+```
+
+Try to run this set.
+
+```{r sum function error, error = TRUE}
+sum(2 4)
+```
+
+When the comma is omitted, R returns an error. Fix the example above. If
+any part of your code is not correct, your document will not knit
+without additional encouragement.
+
+You can sum a sequence, using two vectors separated by the colon
+operator (:), as seen below.
+
+```{r sum sequence}
+sum(4:20)
+```
+
+Base R comes installed with a plethora of functions. R also helps you
+find the right function for you. Place your cursor after the function
+'seq' but before the first parenthesis, and press tab. Hover over the
+function 'seq' in the dropdown list to see a full description. Read the
+description and examine the code. What do you think the output will be?
+
+```{r seq help}
+seq(from = 0, to = 20, by = 4)
+help(seq)
+```
+
+Was the output what you expected? The seq function generates a sequence
+of numbers. In this example, 0 and 20 are the upper and lower limits of
+this sequence. Now, look to the bottom right side RStudio. Since you ran
+the entire cell, the command 'help(seq)' launched a search in the R
+documentation for the seq function in addition to running the seq
+function. Here, we can ascertain that this function takes a set of
+arguments (e.g. from = 0, to = 20, by = 4). When you paste that exact
+code into the seq function, it generates the same result. Try it!
+
+### Objects
+
+Hold that thought about arguments. To truly appreciate arguments, it's
+important to have a working understanding of objects. First, an example
+of an object built into base R. The input below is not numeric, but
+still represents a number. Run the code, and you will see that the word
+'pi' has been assigned the numeric value of pi. This is one of the few
+predefined objects in R. For your purposes in using R, you will likely
+be making your own.
+
+```{r pi object}
+pi 
+```
+
+To assign values to objects, as the numerical version of pi was to the
+word pi, use the '\<-' operator. For example, the code segment below
+assigns the value 50 to the object 'a', and 14 to the object 'b' using
+the '\<-' operator. From a code reading perspective, it may be helpful
+to read the code out loud, saying a is 50, and b is 14. While this seems
+overly simplistic at this stage, objects can be complex.
+
+```{r twoobjects1}
+a <- 50
+b <- 14 
+```
+
+Further, many objects are typically involved in coding. See the code
+chunk below for a simple example of the interaction of two objects.
+
+```{r twoobjects2}
+a + b
+```
+
+Notice that R held the object assignments from the previous cell. You
+can also assign a function to an object, and call that object to execute
+the function. For instance:
+
+```{r functionobject}
+addvalues <- a + b
+addvalues
+```
+
+The product is not reached because R understands the input 'addvalues',
+but because the object add values calls the newly defined function 'a +
+b'. Try switching the values of a and b three chunks ago, and running
+the subsequent chunks. Remember that objects are case sensitive and
+cannot contain spaces. If you ran the code 'A+B', what would happen?
+
+**Why do we not use the equal sign to assign objects?** According to the
+R documentation, the "operator \<- can be used anywhere, whereas the
+operator = is only allowed at the top level (e.g., in the complete
+expression typed at the command prompt) or as one of the subexpressions
+in a braced list of expressions".
+
+### Install Packages
+
+Packages are the fundamental unit of shareable code in R. Packages help
+standardize tools and conventions and save time. There is a package for
+almost anything you can think of. You can make packages yourself if you
+find yourself using R for a unique work flow, you might benefit from
+creating your own package.
+
+![why make a package](packagetweet.png)
+
+You will not be able to see this screenshot of a tweet in the RMD file
+you download, while it will be viewable in the pdf or html knitted
+output of this RMD. To upload your own image, move or save a file to
+your working directory and use this format.
+
+-   Today we will be focusing on **tidyverse**: The tidyverse
+    installation contains multiple R packages that "share an underlying
+    design philosophy, grammar, and data structure" (help(tidyverse))
+    for the purpose of data wrangling, analysis, and visualization.
+    These include ggplot2 for data visualization, dplyr for data
+    manipulation, tidyr, readr for , purrr, tibble, stringr, and
+    forcats.
+
+-   **fivethirtyeight**: The fivethirtyeight package includes 128
+    callable datasets from Nate Silver's statistical analysis website.
+    For a full list of datasets, follow this link:
+    <https://cran.r-project.org/web/packages/fivethirtyeight/vignettes/fivethirtyeight.html>
+
+To install packages, use the code below. Remember to wrap the package in
+quotes when you are installing it.
+
+```{r install packages, echo = TRUE, message = F, warning = F, error = T}
+install.packages("tidyverse")
+install.packages("fivethirtyeight")
+```
+
+Now call the packages using the library() function. You do not need to
+use quotes when calling packages you have already installed.
+
+```{r library}
+library(tidyverse)
+library(fivethirtyeight)
+```
+
+### Import Dataset
+
+We will be using a built-in dataset from the fivethirtyeight package
+that contains information on US Births from 1994 to 2003. Call the
+dataset with the filename 'US_births_1994_2003' and assign it to the
+object 'data' with the operator '\<-'. See the code below.
+
+```{r echo = TRUE, message = F, warning = F}
+data <- US_births_1994_2003
+View(data)
+```
+
+The head() and tail() functions show the first and last six rows of a
+dataframe. Notice that when you run the entire cell, R studio allows you
+to scroll through the various outputs.
+
+```{r echo = TRUE, message = F, warning = F}
+head(data)
+tail(data)
+```
+
+To investigate the names of the columns, run the function colnames().
+For a summary of each column of data, call the summary() function. You
+can also see the data using view().
+
+```{r data2}
+colnames(data)
+summary(data)
+view(data)
+```
+
+## Understanding and Examining Datasets
+
+Most R workflows involve some of these five basic data types. These
+include integers (e.g. 2), numeric values (e.g. 2.5), factors or
+variables with levels (e.g. gender), logical values (i.e. True/False),
+and characters (e.g. "text").
+
+Try running the functions below to examine different facets of the
+dataset. To run a single line within a code chunk, highlight the code
+you want and press 'command + enter' on mac and 'ctrl + enter' on
+windows.
+
+```{r echo = TRUE, message = F, warning = F}
+length(data) # number of elements or components
+str(data)    # structure of an object
+class(data)  # class or type of an object
+names(data)  # column names
+```
+
+Sometimes when your data is loaded, R will recognize a column with an
+incorrect structure. For example, you can change the data type of the
+column 'month' from integer to numeric using the function as.numeric().
+The \$ sign allows for the access to columns based on their names in the
+dataset.
+
+```{r echo = TRUE, message = F, warning = F}
+data$month <- as.numeric(data$month)
+str(data)
+```
+
+When operationalizing factors for quantitative data analysis, you might
+want to convert a string based factor to numeric values. The code below
+converts the string data in day of the week column into a numeric
+vector.
+
+```{r}
+head(data$day_of_week)
+num_day_of_Week <- as.numeric(data$day_of_week)
+head(num_day_of_Week)
+head(data)
+```
+
+Use the unique() function to show the unique values in a column.
+
+```{r echo = TRUE, message = F, warning = F}
+# Get the unique years of the data
+unique(data$year)
+```
+
+Compute the mean of a vector.
+
+```{r echo = TRUE, message = F, warning = F}
+# Compute the average number of births on any day in any year.
+mean(data$births)
+```
+
+Compute the standard deviation of a vector.
+
+```{r echo = TRUE, message = F, warning = F}
+# Compute the standard deviation of the number of births in a given day
+sd(data$births)
+```
+
+Use max() and min() to identify the smallest and largest values in a
+column, and quantile() to determine data distributions.
+
+```{r echo = TRUE, message = F, warning = F}
+max(data$births)
+min(data$births)
+quantile(data$births, probs=c(0.0, 0.33, 0.50, 0.66, 1.0))
+```
+
+To get quantiles for births from 1995 alone, create a new object with
+filtered data.
+
+```{r}
+births_1995 <- filter(data, year==1995)$births
+quantile(births_1995)
+```
+
+Base R allows you to find the index of one column where a maximum occurs
+in another. For example, the following code uses the max() and
+which.max() functions to identify the date when the maximum number of
+births took place.
+
+```{r echo = TRUE, message = F, warning = F}
+# Find the date of the maximum births
+max(data$births)
+maxindex <- which.max(data$births)
+maxdate <- data$date[maxindex]
+maxdate
+```
+
+You can use the filter() function from the tidyverse to achieve the same
+result in one line of code.
+
+```{r}
+filter(data, births==max(births))
+```
+
+We want to find the max number of births for each day of the week for
+any year. The answers for Sundays and Mondays are below. Write your own
+code in the following code chunk that tells you the same information for
+Tuesday and Wednesday Sunday: 8926, August 14th, 1994 Monday: 12967,
+December 22nd, 2003 Tuesday: Wednesday:
+
+```{r}
+# this is what filter is doing on groups
+sundays <- filter(data, day_of_week == 'Sun')
+filter(sundays, births==max(births))
+mondays <- filter(data, day_of_week == 'Mon')
+filter(mondays, births==max(births))
+tuesdays <- filter(data, day_of_week == 'Tues')
+filter(tuesdays, births==max(births))
+
+```
+
+Use the group_by() function and filter the dataset by max births to
+display the max number of births on each day of the week for any year.
+
+```{r}
+data_grouped <- group_by(data, day_of_week)
+filter(data_grouped, births==max(births))
+```
+
+You can also group by more than one column.
+
+```{r}
+# Add year as another grouping variable
+data_grouped <- group_by(data, day_of_week, year)
+data_max_day_year <- filter(data_grouped, births==max(births))
+data_max_day_year
+```
+
+Now we can use ggplot to visualize the max births by weekday over time.
+To write the edited dataset use the write_csv() function.
+
+```{r}
+ggplot(data_max_day_year, aes(x = year, y = births, colour = day_of_week)) +
+  geom_line() +
+  ylab("Max births") +
+  ylim(c(0,15000))
+
+write_csv(data_max_day_year, "max_births_per_dayofweek_per_year.csv")
+```
+
+## Data Wrangling
+
+There are many useful functions for altering your data frame. In this
+section you will start to see the %\>% operator. You can read this
+operator as the word 'then' when you are reading code to yourself (e.g.
+take the original dataset, then arrange it by births in descending
+order)
+
+You can use this operator to apply functions to your dataset. For
+instance, order the data frame by a certain column (default is ascending
+order).
+
+```{r echo = TRUE, message = F, warning = F}
+# Order by number of births
+data <- data %>% arrange(desc(births))
+head(data)
+```
+
+```{r}
+data <- data %>% arrange(year)
+head(data)
+```
+
+Rename specific columns of your data without opening and editing the
+file.
+
+```{r echo = TRUE, message = F, warning = F}
+# Rename day_of_month and day_of_week columns
+data <- data %>% rename(day = date_of_month, weekday = day_of_week)
+head(data)
+```
+
+Select rows of a data frame based on a certain condition. Use the dim()
+function to ascertain the dimensions of the resultant dataset.
+
+```{r echo = TRUE, message = F, warning = F}
+# Select days only in the month of July and do the same for Jan
+july_data <- data %>% filter(month == 7)
+jan_data <- data %>% filter(month == 1)
+# Select days only in the month of january in the year 2000
+jan_2000_data <- data %>% filter(month == 1 & year == 2000)
+dim(jan_2000_data)
+```
+
+Filter out the data for the first half of the year (January through
+June).
+
+```{r}
+janthrujune <- data %>% filter(month == 1:6)
+min(janthrujune$month)
+janthrujune
+```
+
+Select specific columns of a data frame using the select() function
+
+```{r echo = TRUE, message = F, warning = F}
+# Select days only the columns of date and births
+selected_data <- data %>% select(date, births)
+selected_data
+```
+
+Separate one column into several.
+
+```{r echo = TRUE, message = F, warning = F}
+# Separate date of selected_data into 3 columns
+parsed_data <- selected_data %>% separate(date, c('y','m','d'))
+parsed_data
+```
+
+You can also add an additional column to the data frame.
+
+```{r echo = TRUE, message = F, warning = F}
+# Create a column that indicates if it is a summer month (June, July, August).
+data <- data %>% mutate(summer = between(month,6,8))
+str(data)
+```
+
+And compute summary statistics of your data frame.
+
+```{r echo = TRUE, message = F, warning = F}
+# Compute the mean number of births for a given day
+overall_mean <- data %>% summarise(average = mean(births))
+```
+
+Grouping by columns to calculate summary statistics.
+
+```{r echo = TRUE, message = F, warning = F}
+# Compute the mean and median number of births by weekday
+weekday_mean <- data %>%
+  group_by(weekday) %>%
+  summarise(average = mean(births))
+
+weekday_median <- data %>%
+  group_by(weekday) %>%
+  summarise(median = median(births))
+
+#join
+meansandmedians <- right_join(weekday_mean, weekday_median, by = NULL, copy = FALSE, suffix = c(".x", ".y"))
+meansandmedians
+```
+
+Bind two dataframes together by row.
+
+```{r echo = TRUE, message = F, warning = F}
+# Bind data frames by row
+janjul_data <- jan_data %>%
+  bind_rows(july_data)
+tail(janjul_data)
+```
+
+Bind two dataframes together by similar columns.
+
+```{r echo = TRUE, message = F, warning = F}
+# Join two data frames together
+joined_data <- jan_data %>%
+  left_join(july_data, by = c("year","day"))
+tail(joined_data)
+```
+
+Separate multiple columns into one.
+
+```{r echo = TRUE, message = F, warning = F}
+# Select days only in the month of July
+gathered_data <- joined_data %>%
+  gather(key = month, value = births, c("births.x","births.y"))
+# key: column name representing new variable
+# value: column name representing variable values
+# remaining: columns to gather
+```
+
+Save the data frame to a .csv file.
+
+```{r echo = TRUE, message = F, warning = F}
+write_csv(gathered_data, "gathered.csv")
+```
+
+## Data for Visualization
+
+We will be working with a dataset from the fivethrityeight package
+again. If you have not yet installed this package, run
+"install.packages("fivethiryeight")" in the R-console. You will also
+need the "ggpubr" package. This will allow us to plot multiple plots on
+the same figure. Now let's load our libraries. If you do not have the
+packages already, install the tidyverse, fivethirtyeight, and ggpubr
+packages.
+
+The tidyverse installation contains multiple R package for the purpose
+of data wrangling, analysis, and visualization. These include ggplot2
+for data visualization, dplyr for data manipulation, tidyr, readr for ,
+purrr, tibble, stringr, and forcats. The fivethirtyeight package
+includes 128 callable datasets from Nate Silver's statistical analysis
+website. For a full list of datasets, follow this link:
+<https://cran.r-project.org/web/packages/fivethirtyeight/vignettes/fivethirtyeight.html>
+
+ggpubr includes tools for creating publishable plots, making it easy to
+annotate and arrange multiple plots. Install any packages that you need,
+and then load the libraries using the next two code chunks.
+
+```{r echo = TRUE, message = F, warning = F}
+#install.packages("ggpubr")
+#install.packages("tidyverse")
+#install.packages("fivethirtyeight")
+```
+
+```{r echo = TRUE, message = F, warning = F}
+library(tidyverse)
+library(fivethirtyeight)
+library(ggpubr)
+```
+
+We are going to start with data regarding the Bechdel test, which
+measures the representation of women in fictional films. Films that pass
+the Bechdel test will feature at least two women who talk to each other
+about something other than a man. Roughly half of films pass the test,
+however, films that do tended to earn more money than films that failed.
+Let's explore and visualize this dataset to see the extent to which
+financial and other implications can be identified.
+
+First, load the data, assigning it to the object 'bech_data'. Then look
+at the dataset using the View() and str(), short for structure,
+functions.
+
+```{r echo = TRUE, message = F, warning = F}
+bech_data <- bechdel
+View(bech_data)
+str(bech_data)
+bech_data
+```
+
+The columns in the data set include the imdb code, title, financial
+information, as well as the year, decade code, and period code. To
+create pragmatic visualizations of financial data, it will be useful to
+rescale the columns such that the values are displayed in millions of
+dollars, rather than dollars. Simply use mathematical operators (e.g.,
+data\$column/20) on the columns of interest, and call back the edited
+columns to their original names. Make sure you do not run this chunk
+more than once. What would happen?
+
+```{r echo = TRUE, message = F, warning = F}
+bech_data$budget <- bech_data$budget/1000000
+bech_data$domgross <- bech_data$domgross/1000000
+bech_data$intgross <- bech_data$intgross/1000000
+bech_data
+```
+
+## Quick Plots
+
+Now that we are familiar with our data, let's start of with some qplots.
+The 'q' stands for quick in qplots. This is just a way to produce quick
+plots for on-the-fly data visualization. We highly recommend you use the
+ggplot method of plotting, which we will begin covering in the next
+section and spend most of today working with. However, quick plots can
+be useful at times.
+
+There are four key arguments to consider when creating a qplot. These
+are data, where you define your dataset, x and y, where you define the x
+and y variables respectively, and geom, which dictates the geometry of
+your plot. Geom options include point, line, smooth, dotplot, boxplot,
+violin, histogram, and density
+
+```{r echo = TRUE, message = F, warning = F, eval = F}
+qplot(data = "data_frame", x = "x_variable", y = "y_variable", geom = "whatever_plot_you_want")
+```
+
+Let's try a few examples.
+
+The following code will produce a set of boxplots describing the
+distributions of movie budgets disaggregated by year. R treats column
+data, such as the year column, as a single vector. Set the year column
+as a factor within the x argument using the as.factor() function. What
+does the second plot tell you that the first one fails to communicate?
+
+```{r echo = TRUE, message = F, warning = F}
+qplot(data = bech_data, x = year, y= domgross, geom = 'boxplot')
+qplot(data = bech_data, x = as.factor(year), y= domgross, geom = 'boxplot')
+```
+
+Period codes were included in the dataset to compare movies which were
+released in the same time period. Data included movies from 1970 to
+2013, which were categorized into five period codes. Let's group the
+domestic gross values by period codes to compare the distributions of
+film's earnings over time. Let's also compare boxplots to violin plots,
+which show the full distribution of data instead of the plotting summary
+statistics. What do violin plots tell you that boxplots fail to capture?
+
+```{r echo = TRUE, message = F, warning = F}
+qplot(data = bech_data, x = period_code, y= domgross, group=period_code, geom = 'boxplot')
+qplot(data = bech_data, x = period_code, y= domgross, group=period_code, geom = 'violin')
+```
+
+## Plotting with ggplot
+
+Now let's start using ggplot. We have much more flexibility with the
+ggplot framework. Let's make the same violin plot for period_code as we
+did in the qplot using ggplot.
+
+```{r echo = TRUE, message = F, warning = F, eval = F}
+ggplot(data = bech_data, aes(x = as.factor(period_code), y = domgross)) +
+  geom_violin()
+```
+
+Using ggplot, we can dive deep into histograms and density plots. These
+particular visualizations provide insight at a glance for the
+distributions of data across several groups. To start, let's create a
+histogram of the domestic gross revenue.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross)) +
+  geom_histogram()
+```
+
+Now let's add some bells and whistles using ggplot's layers-based coding
+to make this visualization more readable and appealing.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross, fill=binary)) +
+  geom_histogram(alpha=0.8, colour = 'grey') +
+  ggtitle("Distribution of Movies in FiveThirtyEight Bechdel Dataset") +
+  xlab('Domestic Gross in Millions') +
+  ylab('Density') +
+  labs(fill = 'Bechdel Test')
+```
+
+You can specify the color (outline) and fill color of plots. You can
+also assign ggplots to objects. The gpubr function ggarrange() allows
+you to easily present multiple plots in the same output.
+
+```{r echo = TRUE, message = F, warning = F}
+color <- ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(color = 'blue') + 
+  ggtitle("Outlining the histogram") + 
+  xlab("Domestic Gross Revenue")
+
+fill <- ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(fill = 'green') + 
+  ggtitle("Filling the histogram") + 
+  xlab("Domestic Gross Revenue")
+
+ggarrange(color, fill)
+```
+
+You can vary the number of bins in each histogram. Run the following
+chunk to see the implications of the bin argument.
+
+```{r echo = TRUE, message = F, warning = F}
+# Vary the number of bins per histogram
+bin60 <- ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(bins = 60) + 
+  ggtitle("60 bins") + 
+  xlab("Domestic Gross Revenue")
+bin30 <- ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(bins = 30) + 
+  ggtitle("30 bins") + 
+  xlab("Domestic Gross Revenue")
+bin15 <- ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(bins = 15) + 
+  ggtitle("15 bins") + 
+  xlab("Domestic Gross Revenue")
+
+ggarrange(bin60, bin30, bin15, ncol = 3)
+```
+
+The density plot is a variation of the histogram, where values in
+columns are smoothed to be equally distributed. You can use
+geom_density() to add a density plot on top of a histogram. The alpha
+argument refers to the opacity of the following argument, fill, where
+you define the color of the density plot.
+
+```{r echo = TRUE, message = F, warning = F}
+# Add a density plot
+ggplot(data = bech_data, aes(x = domgross, y = ..density..)) + 
+  geom_histogram(bins = 60, color = 'grey', fill = 'blue') + 
+  ggtitle("Distibution of Domestic Gross Revenue for Movies") + 
+  xlab("Domestic Gross Revenue") + 
+  geom_density(alpha = .4, fill = 'grey')
+```
+
+You can also create histograms to compare multiple groups within a
+single plot. Try switching the color argument with the fill argument,
+keeping the object binary in place. See if you can apply what you have
+learned so far to improve the appeal of the plot.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross, y = ..density.., fill = binary)) + 
+  geom_histogram(position = "identity", bins = 60, alpha = .5) + 
+  ggtitle("Distibution of Domestic Gross Revenue for Movies") + 
+  xlab("Domestic Gross Revenue") + 
+  geom_density(alpha = .4)
+```
+
+Change the legend title using the layer scale_color_discrete() and the
+name argument.
+
+```{r echo = TRUE, message = F, warning = F}
+# Change legend title
+ggplot(data = bech_data, aes(x = domgross, y = ..density.., color = binary)) + 
+  geom_histogram(position = "identity", bins = 60, alpha = .5) + 
+  ggtitle("Distibution of Domestic Gross Revenue for Movies") + 
+  xlab("Domestic Gross Revenue") + 
+  geom_density(alpha = .4) +
+  scale_color_discrete(name = "Test")
+```
+
+Use ggsave() and set the desired filename, size, dpi, and other
+parameters for saving your plot.
+
+```{r echo = TRUE, message = F, warning = F}
+# Save your plot
+ggplot(data = bech_data, aes(x = domgross, y = ..density.., color = binary)) + 
+  geom_histogram(position = "identity", bins = 60, alpha = .5) + 
+  ggtitle("Distibution of Domestic Gross Revenue for Movies") + 
+  xlab("Domestic Gross Revenue") + 
+  geom_density(alpha = .4) +
+  scale_color_discrete(name = "Test") +
+  ggsave("Hist_Dens.png", width = 5, height = 5)
+```
+
+Let's create some more box plots and violin plots using the period code
+column. As these plots are used to compare distributions of data, they
+are especially useful for comparing different groups of continuous data.
+You can use the mutate() function to set period_code as a factor, as to
+make your ggplot coding simpler and cleaner. In this iteration, let's
+set try a notched box plot, which emphasize the median with notches.
+
+```{r echo = TRUE, message = F, warning = F}
+bech_data <- bech_data %>% mutate(period_code = as.factor(period_code))
+
+ggplot(data = bech_data, aes(x = period_code, y= domgross)) + 
+  geom_boxplot(notch = TRUE)
+```
+
+You can add a dot to represent the mean domestic revenue for each group
+of movies using stat_summary(fun.y = mean, geom = "point", color =
+"anycolor")
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = period_code, y = domgross)) + 
+  geom_boxplot(notch = T) + 
+  stat_summary(fun.y = mean, geom = "point", color = 'red')
+```
+
+Assign period_code to the argument color to assign each period code a
+unique color.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = period_code, y= domgross, color = period_code)) + 
+  geom_boxplot(notch = T) + 
+  stat_summary(fun.y=mean, geom="point", color = 'red')
+```
+
+*If you need another task while the class is progressing, add a title,
+change the axis labels, and change the legend title to the last plot
+that we made.*
+
+You can create make group comparisons using box plots. Use the aes()
+function to specify the group using the color or fill argument, and the
+variables of interest using the x and y arguments. Instead of outlining
+this boxplot in color, fill the boxplot in color. Add a legend title.
+Use the layer "scale_fill_discrete" when "fill" is used in the aes. Use
+the layer "scale_color_discrete" when "color" is used in the aes.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = period_code, y = domgross, color = binary)) + 
+  geom_boxplot(notch = TRUE)
+```
+
+Scatter plots are useful for visualizing how two sets of continuous data
+are related. Let's plot domestic gross revenue vs. international gross
+revenue in the Bechdel dataset.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross, y = intgross)) + 
+  geom_point()
+```
+
+You can change the size, shape, and color of points in your scatter
+plot.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross, y = intgross)) + 
+  geom_point(size = 2, shape = 6, color = 'blue')
+```
+
+To label the points that represent top five movies based on
+international gross revenue, first arrange the international gross
+revenue column in descending order, using the slice() function to limit
+the dataframe to the top five movies. Then, add an addition geom_point()
+layer calling the topfive data, as shown below.
+
+```{r echo = TRUE, message = F, warning = F}
+topfive <- bech_data %>%
+  arrange(desc(intgross)) %>%
+  slice(1:5)
+
+ggplot(data = bech_data, aes(x = domgross, y = intgross)) + 
+  geom_point() + 
+  geom_point(data=topfive, aes(x=domgross, y = intgross), color = 'red') +
+  geom_text(data=topfive, label = topfive$title, nudge_y = 100)
+```
+
+Add a regression line to any scatter plot with geom_smooth(method =
+'lm').
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = domgross, y = intgross)) + 
+  geom_point() +
+  geom_smooth(method = 'lm')
+```
+
+If you need another task, change the color to red and linetype to dashed
+in the previous scatter plot.
+
+You can also display scatter plots by groups, distinguished by color or
+shape, as seen below. See if you can add a regression line to one of
+these plots.
+
+```{r echo = TRUE, message = F, warning = F}
+# Scatter plot by group
+plot1 <- ggplot(data = bech_data, aes(x = domgross, y = intgross, color = binary)) + 
+  geom_point()
+plot2 <- ggplot(data = bech_data, aes(x = domgross, y = intgross, shape = binary)) + 
+  geom_point()
+
+ggarrange(plot1,plot2,ncol=2)
+```
+
+You can also add rugs, or lines across the x-axis that are tied to
+single points of data, to the plot using geom_rug().
+
+```{r echo = TRUE, message = F, warning = F}
+# Add rugs to scatter plot
+ggplot(data = bech_data, aes(x = domgross, y = intgross, color = binary)) + 
+  geom_point() + 
+  geom_rug()
+```
+
+You can also create bar plots, or jitter plots. The bar plot below gives
+an indication of the extent to which each reason for failing was given,
+as well as how many times a movie passed the test. The jitter plot,
+however, shows the individual points from the dataset as they relate to
+the binary column mapped to the y-axis.
+
+```{r echo = TRUE, message = F, warning = F}
+ggplot(data = bech_data, aes(x = clean_test)) + 
+  geom_bar()
+
+ggplot(data = bech_data, aes(x = clean_test, y = binary)) + 
+  geom_jitter()
+```
+
+### References
+
+CRDDS: Consult hours: Tuesdays 12-1 and Thursdays 1-2 Events:
+<http://www.colorado.edu/crdds/events> Listserv:
+<https://lists.colorado.edu/sympa/subscribe/crdds-news> OSF:
+<https://osf.io/36mj4/>
+
+Laboratory for Interdisciplinary Statistical Analysis (LISA):
+<http://www.colorado.edu/lab/lisa/resources>
+
+Online:
+
+dyplyr cheat sheet - data wrangling
+<https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf>
+
+Data Visualization Resources
+
+ggplot cheat sheet
+<https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf>
+
+qplots
+<http://www.sthda.com/english/wiki/qplot-quick-plot-with-ggplot2-r-software-and-data-visualization>
+
+Histograms/Density plots
+<http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization>
+
+#### Boxplots/Violin plots
+
+<http://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
+
+#### Scatter plots
+
+<http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization>
+
+R Markdown Cheatsheet
+<https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf>
+
+Data Carpentry
+<http://www.datacarpentry.org/R-genomics/01-intro-to-R.html>
+
+R manuals by CRAN <https://cran.r-project.org/manuals.html>
+
+Basic Reference Card
+<https://cran.r-project.org/doc/contrib/Short-refcard.pdf>
+
+R for Beginners (Emmanuel Paradis)
+<https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf>
+
+The R Guide (W. J. Owen)
+<https://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf>
+
+An Introduction to R (Longhow Lam)
+<https://cran.r-project.org/doc/contrib/Lam-IntroductionToR_LHL.pdf>
+
+Cookbook for R <http://www.cookbook-r.com/>
+
+Advanced R (Hadley Wickham) <http://adv-r.had.co.nz/>
+
+rseek: search most online R documentation and discussion forums
+<http://rseek.org/>
+
+The R Inferno: useful for trouble shooting errors
+<http://www.burns-stat.com/documents/books/the-r-inferno/>
+
+Google: endless blogs, posted Q & A, tutorials, references guides where
+you're often directed to sites such as Stackoverflow, Crossvalidated,
+and the R-help mailing list.
+
+YouTube R channel <https://www.youtube.com/user/TheLearnR>
+
+R Programming in Coursera <https://www.coursera.org/learn/r-programming>
+
+Various R videos
+<http://jeromyanglim.blogspot.co.uk/2010/05/videos-on-data-analysis-with-r.html>
+
+R for Data Science - Book <http://r4ds.had.co.nz>
+
+Base R cheat sheet
+<https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf>
+
+dyplyr cheat sheet - data wrangling
+<https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf>
+
+ggplot cheat sheet - data visualization
+<https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf>

@@ -1,0 +1,11 @@
+I"z<h1 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h1>
+
+<p>As the Bootcamp proceeds, please note any of your questions in the Zoom chat. If we note a pattern of recurring questions, we will attempt to address those questions on this page, which will be preserved as a resource for future learners.</p>
+
+<p><strong>I’m trying to unzip the file for the python session but getting an inappropriate file or format error</strong></p>
+
+<p>If you are working from a Mac this may be an error in the zip funtion. Check out this solution for unzipping from the terminal: <a href="https://softwaretested.com/mac/what-is-error-79-inappropriate-file-type-or-format/">https://softwaretested.com/mac/what-is-error-79-inappropriate-file-type-or-format/</a>.</p>
+
+<p>If that’s not working, consider using the virtual environment set up by Research Computing for the Boot Camp. Instructions can be found on this page: <a href="https://cu-boulder-crdds.github.io/data_bootcamp/content/data-analysis-in-python/preliminaries.html">https://cu-boulder-crdds.github.io/data_bootcamp/content/data-analysis-in-python/preliminaries.html</a></p>
+
+:ET
