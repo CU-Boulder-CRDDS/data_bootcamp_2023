@@ -8,17 +8,16 @@ Sponsored by the [Center for Research Data and Digital Scholarship (CRDDS)](http
 
 ## Coordinators
 
-Jordan Wrigley (she/hers)  
-Data Librarian  
-Center for Research Data and Digital Scholarship  
-University of Colorado Boulder Libraries  
-[jordan.wrigley@colorado.edu](mailto:jordan.wrigley@colorado.edu)
-
 Aditya (Adi) Ranganath (he/his)  
 Data Librarian  
 Center for Research Data and Digital Scholarship  
 University of Colorado Boulder Libraries  
 [Aditya.Ranganath@colorado.edu](mailto:Aditya.Ranganath@colorado.edu)
+
+Kim Popetz\
+Event and Outreach Coordinator\
+Center for Research Data and Digital Scholarship\
+University of Colorado Boulder Libraries
 
 Dylan Perkins\
 Associate Director of User Support\
