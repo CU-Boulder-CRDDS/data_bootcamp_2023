@@ -30,7 +30,7 @@ University of Colorado Boulder Research Computing
 
 ## Schedule
 
-### Tuesday, August 3
+### Tuesday, January 10
 
 | Time | Content|Presenter(s)|
 | --- | ---|----|
@@ -40,7 +40,7 @@ University of Colorado Boulder Research Computing
 | 12:00 to 1:30 | [Containerization With Docker](content/docker.html)|Daniel Trahan
 | 2:30 to 4:30| Installation Clinic| CRDDS Team
 
-### Wednesday, August 4
+### Wednesday, January 11
 
 | Time | Content|Presenter(s)|
 | --- | ---|----|
@@ -50,7 +50,7 @@ University of Colorado Boulder Research Computing
 | 12:00 to 1:30 | [Data Analysis in R](content/data-analysis-in-R.html) (Session 2)|Jacob Holster|
 | 2:30 to 4:30 | Clinic| CRDDS Team
 
-### Thursday, August 5
+### Thursday, January 12
 
 | Time | Content|Presenters(s)
 | --- | ---|----|
