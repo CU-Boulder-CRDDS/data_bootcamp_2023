@@ -19,6 +19,10 @@ Event and Outreach Coordinator\
 Center for Research Data and Digital Scholarship\
 University of Colorado Boulder Libraries
 
+Liz Novosel\
+Computer Science, Mathematics and Social Sciences Librarian\
+University of Colorado Boulder Libraries
+
 Dylan Perkins\
 Associate Director of User Support\
 Center for Research Data and Digital Scholarship\
