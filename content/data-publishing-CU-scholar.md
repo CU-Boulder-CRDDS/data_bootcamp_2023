@@ -2,7 +2,7 @@
 layout: default
 title: Data Publishing and CU Scholar
 has_children: True
-nav_order: 1.81
+nav_order: 1.62
 ---
 
 # Data Publishing and and CU Scholar

@@ -8,14 +8,8 @@ Sponsored by the [Center for Research Data and Digital Scholarship (CRDDS)](http
 
 ## Coordinators
 
-Aditya (Adi) Ranganath (he/his)  
-Data Librarian  
-Center for Research Data and Digital Scholarship  
-University of Colorado Boulder Libraries  
-[Aditya.Ranganath@colorado.edu](mailto:Aditya.Ranganath@colorado.edu)
-
-Kim Popetz\
-Event and Outreach Coordinator\
+Nickoal Eichmann-Kalwara\
+Digital Scholarship Librarian\
 Center for Research Data and Digital Scholarship\
 University of Colorado Boulder Libraries
 
@@ -28,38 +22,52 @@ Associate Director of User Support\
 Center for Research Data and Digital Scholarship\
 University of Colorado Boulder Research Computing  
 
+Kim Popetz\
+Event and Outreach Coordinator\
+Center for Research Data and Digital Scholarship\
+University of Colorado Boulder Libraries
+
+Aditya (Adi) Ranganath (he/his)  
+Data Librarian  
+Center for Research Data and Digital Scholarship  
+University of Colorado Boulder Libraries  
+[Aditya.Ranganath@colorado.edu](mailto:Aditya.Ranganath@colorado.edu)
+
 ## Schedule
 
 ### Tuesday, January 10
 
 | Time | Content|Presenter(s)|
 | --- | ---|----|
-| 9:00 to 10:15 | Welcome and Introduction|Jordan Wrigley, Adi Ranganath, and Noah Geisel|
-| 10:15 to 11:45 | [GitHub and GitHub Pages](content/git_github.html)|Phil White
-|11:45 to 12:00|Break|
-| 12:00 to 1:30 | [Containerization With Docker](content/docker.html)|Daniel Trahan
-| 2:30 to 4:30| Installation Clinic| CRDDS Team
+| 10:00 to 10:25 | [Welcome and Introduction](content/introduction.html)|TBD|
+| 10:30-12:00| Data Management| Adi Ranganath
+| 12:00-12:55| Break|
+| 1:00-2:25| [Finding and Evaluating Data](content/finding-data.html)| Liz Novosel 
+| 2:30 to 3:10| Qualitative and Humanities Data|Nickoal Eichmann-Kalwara
+|3:10 to 3:20|Break|
+| 3:20 to 4:00| Ethics and the Social Context of Data| Nickoal Eichmann-Kalwara
+| 4:00 to 5:00| Optional Installation and Set-up Clinic| CRDDS Team
 
 ### Wednesday, January 11
 
 | Time | Content|Presenter(s)|
 | --- | ---|----|
-| 9:00 to 9:55 | [Finding and Evaluating Data](content/finding-data.html)| Jordan Wrigley and Adi Ranganath|
-| 10 to 11:30 | [Data Analysis in R](content/data-analysis-in-R.html) (Session 1)|Jacob Holster|
-| 11:30 to 12:00 | Break|
-| 12:00 to 1:30 | [Data Analysis in R](content/data-analysis-in-R.html) (Session 2)|Jacob Holster|
-| 2:30 to 4:30 | Clinic| CRDDS Team
+| 10:00 to 11:25|[GitHub and GitHub Pages](content/git_github.html)| Phil White|
+| 11:25 to 11:40 | Break
+| 11:40 to 12:30 |[Data Publishing and CU Scholar](content/data-publishing-CU-scholar.html)|Melissa Cantrell
+| 12:30 to 1:30 | Break
+| 1:30 to 3:00| Data Analysis in R: Session 1| Adi Ranganath
+| 3:00 to 3:15| Break
+| 3:15 to 5:00| Data Analysis in R: Session 2| Adi Ranganath
 
 ### Thursday, January 12
 
 | Time | Content|Presenters(s)
 | --- | ---|----|
-| 9:00 to 9:55 | [Data Publishing, Open Access, and CU Scholar](content/data-publishing-CU-scholar.html)|Melissa Cantrell and Andrew Johnson|
-| 10:00 to 10:55 | [Ethics and the Social Context of Data: A Case Study of the United States Census](content/census_data_ethics.html)|Nickoal Eichmann-Kalwara|
-| 11:00 to 12:30 | [Data Analysis in Python](content/data-analysis-in-python.html) (Session 1)| Tim Dunn|
-| 12:30 to 1:00 | Break|
-| 1:00 to 2:30 | [Data Analysis in Python](content/data-analysis-in-python.html) (Session 2)|Tim Dunn|
-| 2:30 to 3:00|[Wrap Up and Next Steps](content/wrap-up.html)|Jordan Wrigley and Adi Ranganath|
-|3:30 to 5:30| Clinic| CRDDS Team
+| 10:00 to 12:00 | [Data Analysis in Python: Session 1](content/data-analysis-in-python.html)| Tim Dunn
+| 12:00 to 1:00| Break
+| 1:00 to 3:00 | [Data Analysis in Python: Session 2](content/data-analysis-in-python.html)| Tim Dunn|
+| 2:30 to 3:00|[Wrap Up and Next Steps](content/wrap-up.html)|TBA|
+| 3:00 to 5:00| Optional Office Hours| CRDDS Team
 
 _Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST)_  

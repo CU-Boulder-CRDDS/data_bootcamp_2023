@@ -2,7 +2,7 @@
 layout: default
 title: Ethics and the Social Context of Data
 has_children: true
-nav_order: 1.82
+nav_order: 1.522
 ---
 
 # Ethics and the Social Context of Data: A Case Study of the United States Census

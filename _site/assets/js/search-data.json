@@ -239,35 +239,35 @@
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding_data/data-sources.html",
     "relUrl": "/content/finding_data/data-sources.html"
   },"40": {
+    "doc": "Data Management",
+    "title": "Data Management",
+    "content": "Session Recording: Link will be posted here after Bootcamp. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html",
+    "relUrl": "/content/data_management.html"
+  },"41": {
+    "doc": "Data Management",
+    "title": "Instructor",
+    "content": "Adi Ranganath . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#instructor",
+    "relUrl": "/content/data_management.html#instructor"
+  },"42": {
+    "doc": "Data Management",
+    "title": "Introduction",
+    "content": " ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#introduction",
+    "relUrl": "/content/data_management.html#introduction"
+  },"43": {
+    "doc": "Presentation",
+    "title": "Presentation",
+    "content": "If you’d like to access the presentation slide-deck in a separate window, please click here. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management/data_managment_lesson.html",
+    "relUrl": "/content/data_management/data_managment_lesson.html"
+  },"44": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": "If you’d like to access the presentation slide-deck in its own window, please click here. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-cu-scholar/data_publishing_presentation.html",
     "relUrl": "/content/data-publishing-cu-scholar/data_publishing_presentation.html"
-  },"41": {
-    "doc": "Enabling Reproducibility With Docker",
-    "title": "Enabling Reproducibility With Docker",
-    "content": "Session Recording: Link will be posted here after Bootcamp. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/docker.html",
-    "relUrl": "/content/docker.html"
-  },"42": {
-    "doc": "Enabling Reproducibility With Docker",
-    "title": "Instructor",
-    "content": "Daniel Trahan . ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/docker.html#instructor",
-    "relUrl": "/content/docker.html#instructor"
-  },"43": {
-    "doc": "Enabling Reproducibility With Docker",
-    "title": "Introduction",
-    "content": "This session will introduce the concept of reproducible research, and provide an overview of strategies and tools to facilitate reproducibility. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/docker.html#introduction",
-    "relUrl": "/content/docker.html#introduction"
-  },"44": {
-    "doc": "Presentation",
-    "title": "Presentation",
-    "content": "If you’d like to access the presentation slide-deck in a separate window, please click here. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/docker/docker.html",
-    "relUrl": "/content/docker/docker.html"
   },"45": {
     "doc": "Data Finding Activity",
     "title": "Example of Data Searching Process: Cultural Appropriation of Yoga",
@@ -319,13 +319,13 @@
   },"53": {
     "doc": "Home",
     "title": "Coordinators",
-    "content": "Aditya (Adi) Ranganath (he/his) Data Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries Aditya.Ranganath@colorado.edu . Kim Popetz Event and Outreach Coordinator Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Liz Novosel Computer Science, Mathematics and Social Sciences Librarian University of Colorado Boulder Libraries . Dylan Perkins Associate Director of User Support Center for Research Data and Digital Scholarship University of Colorado Boulder Research Computing . ",
+    "content": "Nickoal Eichmann-Kalwara Digital Scholarship Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Liz Novosel Computer Science, Mathematics and Social Sciences Librarian University of Colorado Boulder Libraries . Dylan Perkins Associate Director of User Support Center for Research Data and Digital Scholarship University of Colorado Boulder Research Computing . Kim Popetz Event and Outreach Coordinator Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Aditya (Adi) Ranganath (he/his) Data Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries Aditya.Ranganath@colorado.edu . ",
     "url": "http://localhost:4000/data_bootcamp_2023/#coordinators",
     "relUrl": "/#coordinators"
   },"54": {
     "doc": "Home",
     "title": "Schedule",
-    "content": "Tuesday, January 10 . | Time | Content | Presenter(s) | . | 9:00 to 10:15 | Welcome and Introduction | Jordan Wrigley, Adi Ranganath, and Noah Geisel | . | 10:15 to 11:45 | GitHub and GitHub Pages | Phil White | . | 11:45 to 12:00 | Break |   | . | 12:00 to 1:30 | Containerization With Docker | Daniel Trahan | . | 2:30 to 4:30 | Installation Clinic | CRDDS Team | . Wednesday, January 11 . | Time | Content | Presenter(s) | . | 9:00 to 9:55 | Finding and Evaluating Data | Jordan Wrigley and Adi Ranganath | . | 10 to 11:30 | Data Analysis in R (Session 1) | Jacob Holster | . | 11:30 to 12:00 | Break |   | . | 12:00 to 1:30 | Data Analysis in R (Session 2) | Jacob Holster | . | 2:30 to 4:30 | Clinic | CRDDS Team | . Thursday, January 12 . | Time | Content | Presenters(s) | . | 9:00 to 9:55 | Data Publishing, Open Access, and CU Scholar | Melissa Cantrell and Andrew Johnson | . | 10:00 to 10:55 | Ethics and the Social Context of Data: A Case Study of the United States Census | Nickoal Eichmann-Kalwara | . | 11:00 to 12:30 | Data Analysis in Python (Session 1) | Tim Dunn | . | 12:30 to 1:00 | Break |   | . | 1:00 to 2:30 | Data Analysis in Python (Session 2) | Tim Dunn | . | 2:30 to 3:00 | Wrap Up and Next Steps | Jordan Wrigley and Adi Ranganath | . | 3:30 to 5:30 | Clinic | CRDDS Team | . Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST) . ",
+    "content": "Tuesday, January 10 . | Time | Content | Presenter(s) | . | 10:00 to 10:25 | Welcome and Introduction | TBD | . | 10:30-12:00 | Data Management | Adi Ranganath | . | 12:00-12:55 | Break |   | . | 1:00-2:25 | Finding and Evaluating Data | Liz Novosel | . | 2:30 to 3:10 | Qualitative and Humanities Data | Nickoal Eichmann-Kalwara | . | 3:10 to 3:20 | Break |   | . | 3:20 to 4:00 | Ethics and the Social Context of Data | Nickoal Eichmann-Kalwara | . | 4:00 to 5:00 | Optional Installation and Set-up Clinic | CRDDS Team | . Wednesday, January 11 . | Time | Content | Presenter(s) | . | 10:00 to 11:25 | GitHub and GitHub Pages | Phil White | . | 11:25 to 11:40 | Break |   | . | 11:40 to 12:30 | Data Publishing and CU Scholar | Melissa Cantrell | . | 12:30 to 1:30 | Break |   | . | 1:30 to 3:00 | Data Analysis in R: Session 1 | Adi Ranganath | . | 3:00 to 3:15 | Break |   | . | 3:15 to 5:00 | Data Analysis in R: Session 2 | Adi Ranganath | . Thursday, January 12 . | Time | Content | Presenters(s) | . | 10:00 to 12:00 | Data Analysis in Python: Session 1 | Tim Dunn | . | 12:00 to 1:00 | Break |   | . | 1:00 to 3:00 | Data Analysis in Python: Session 2 | Tim Dunn | . | 2:30 to 3:00 | Wrap Up and Next Steps | TBA | . | 3:00 to 5:00 | Optional Office Hours | CRDDS Team | . Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST) . ",
     "url": "http://localhost:4000/data_bootcamp_2023/#schedule",
     "relUrl": "/#schedule"
   },"55": {
@@ -503,66 +503,78 @@
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/python_lesson.html",
     "relUrl": "/content/data-analysis-in-python/python_lesson.html"
   },"84": {
+    "doc": "Qualitative and Humanities Data",
+    "title": "Qualitative and Humanities Data",
+    "content": "Session Recording: Link will be posted here after Bootcamp. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html",
+    "relUrl": "/content/qualitative-data.html"
+  },"85": {
+    "doc": "Qualitative and Humanities Data",
+    "title": "Instructors",
+    "content": "Nickoal Eichmann-Kalwara . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#instructors",
+    "relUrl": "/content/qualitative-data.html#instructors"
+  },"86": {
     "doc": "R Resources",
     "title": "R Resources",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html",
     "relUrl": "/content/data-analysis-in-R/r-resources.html"
-  },"85": {
+  },"87": {
     "doc": "R Resources",
     "title": "Cheatsheets and Reference Guides",
     "content": ". | dyplyr cheat sheet (data wrangling) | ggplot cheat sheet (data visualization) | R Markdown Cheatsheet (reproducibility and communication of results) | Base R cheat sheet | R Reference Card | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides"
-  },"86": {
+  },"88": {
     "doc": "R Resources",
     "title": "Troubleshooting",
     "content": ". | rseek (search most online R documentation and discussion forums) | R inferno (useful for troubleshooting) | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#troubleshooting",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#troubleshooting"
-  },"87": {
+  },"89": {
     "doc": "R Resources",
     "title": "Data Visualization Guides and Tutorials",
     "content": ". | qplots tutorial | Histograms/Density plots tutorial | Boxplots/Violin plots tutorial | Scatterplots tutorial | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials"
-  },"88": {
+  },"90": {
     "doc": "R Resources",
     "title": "General guides and courses",
     "content": ". | Data Carpentry | R manuals by CRAN | R for Beginners by Emmanuel Paradis | The R Guide by W.J. Owen | An Introduction to R by Longhow Lam | Cookbook for R | Advanced R by Hadley Wickham | R Programming in Coursera | R for Data Science | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#general-guides-and-courses",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#general-guides-and-courses"
-  },"89": {
+  },"91": {
     "doc": "R Resources",
     "title": "Video Tutorials",
     "content": ". | YouTube R channel | Various R videos | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#video-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#video-tutorials"
-  },"90": {
+  },"92": {
     "doc": "Recordings",
     "title": "Research Data Bootcamp Session Recordings (2022)",
     "content": "Individual session recordings will be posted on this page (as well as individual session pages) after the conclusion of the Bootcamp. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/recordings.html#research-data-bootcamp-session-recordings-2022",
     "relUrl": "/content/wrap-up/recordings.html#research-data-bootcamp-session-recordings-2022"
-  },"91": {
+  },"93": {
     "doc": "Recordings",
     "title": "Recordings",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/recordings.html",
     "relUrl": "/content/wrap-up/recordings.html"
-  },"92": {
+  },"94": {
     "doc": "Virtual Environments",
     "title": "Virtual Environments",
     "content": "Using the CRDDS Research Data Bootcamp JupyterHub: . Step 1: Navigate to https://jupyterhub-crdds-colorado.org . Step 2: Login with your Github credentials . Step 3: Click “Launch Server” then choose which notebook type you want to open (rstudio or python), and click “Start”. Step 4: You will now be in the JupyterLab interface. 4A: If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. OR: . 4B: If you chose the “rstudio” notebook option, there is no need to click buttons – just manually change “lab” to “rstudio” in the URL bar of your browser. For example: . Change: https://jupyterhub-crdds-colorado.org/user/janedoe/lab/workspaces/auto-F . To: https://jupyterhub-crdds-colorado.org/user/janedoe/rstudio . ….this will take you to the familiar Rstudio interface. All of the packages needed for this workshop have been pre-installed. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html",
     "relUrl": "/content/virtual-environments.html"
-  },"93": {
+  },"95": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap-up and Next Steps",
     "content": "Thank you for joining us these past few days! We hope you’ll join CRDDS for future training opportunities as you explore these ideas further. For more on CRDDS education and training activities, please see here. Please also check follow our events calendar, which is regularly updated. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up.html#wrap-up-and-next-steps",
     "relUrl": "/content/wrap-up.html#wrap-up-and-next-steps"
-  },"94": {
+  },"96": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap Up and Next Steps",
     "content": " ",

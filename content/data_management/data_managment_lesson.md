@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Presentation
-parent: Enabling Reproducibility With Docker
+parent: Data Management
 nav_order: 1
 has_children: false
 ---
