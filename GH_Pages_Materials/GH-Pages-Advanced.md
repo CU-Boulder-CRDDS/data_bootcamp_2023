@@ -20,7 +20,7 @@ I get it!
 gem install jekyll bundler
 ```
 
-- You'll also want a good text editor, such as [Atom](https://atom.io){:target="_blank"}.  
+- You'll also want a good text editor...  
 
 
 - **Now**, find a theme you like, go to it's GitHub repository then...  
