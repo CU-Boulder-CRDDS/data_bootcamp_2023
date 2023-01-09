@@ -8,6 +8,11 @@ Sponsored by the [Center for Research Data and Digital Scholarship (CRDDS)](http
 
 ## Coordinators
 
+Tim Dunn\
+Research Computing and Visualization Specialist\
+Center for Research Data and Digital Scholarship\
+University of Colorado Boulder Libraries
+
 Nickoal Eichmann-Kalwara\
 Digital Scholarship Librarian\
 Center for Research Data and Digital Scholarship\
@@ -67,7 +72,7 @@ University of Colorado Boulder Libraries
 | 10:00 to 12:00 | [Data Analysis in Python: Session 1](content/data-analysis-in-python.html)| Tim Dunn
 | 12:00 to 1:00| Break
 | 1:00 to 3:00 | [Data Analysis in Python: Session 2](content/data-analysis-in-python.html)| Tim Dunn|
-| 2:30 to 3:00|[Wrap Up and Next Steps](content/wrap-up.html)|TBA|
-| 3:00 to 5:00| Optional Office Hours| CRDDS Team
+| 3:15 to 3:30|[Wrap Up and Next Steps](content/wrap-up.html)|TBA|
+| 3:30 to 5:00| Optional Office Hours| CRDDS Team
 
 _Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST)_  

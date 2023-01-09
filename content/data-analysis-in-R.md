@@ -7,15 +7,15 @@ nav_order: 1.8
 
 # Data Analysis in R
 
-**Session Recording:** Link will be posted here after Bootcamp. 
-
 ## Instructor
 
-Jacob Holster, PhD. (he/him/his)  
-Lecturer of Music Education  
-The Pennsylvania State University
+Aditya (Adi) Ranganath (he/his)  
+Data Librarian  
+Center for Research Data and Digital Scholarship  
+University of Colorado Boulder Libraries  
+[Aditya.Ranganath@colorado.edu](mailto:Aditya.Ranganath@colorado.edu)
 
 ## Introduction
 
-This session will cover the fundamentals of data analysis and visualization using the R programming language.
+This session provides a primer on using R and R Studio for data-based research. 
 

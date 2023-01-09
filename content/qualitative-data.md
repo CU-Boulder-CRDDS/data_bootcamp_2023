@@ -7,8 +7,9 @@ nav_order: 1.521
   
 # Qualitative and Humanities Data
   
-**Session Recording:** Link will be posted here after Bootcamp. 
+## Instructor
 
-## Instructors
-
-Nickoal Eichmann-Kalwara
+Nickoal Eichmann-Kalwara\
+Digital Scholarship Librarian\
+Center for Research Data and Digital Scholarship\
+University of Colorado Boulder Libraries

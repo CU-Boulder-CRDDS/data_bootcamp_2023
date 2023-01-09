@@ -7,13 +7,7 @@ nav_order: 1.62
 
 # Data Publishing and and CU Scholar
 
-**Session Recording:** Link will be posted here after Bootcamp. 
-
-## Instructors
-
-Andrew Johnson  
-Associate Professor  
-Director, Data and Scholarly Communications Services
+## Instructor
 
 Melissa Cantrell  
 Assistant Professor  

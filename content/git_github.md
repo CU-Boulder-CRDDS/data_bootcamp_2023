@@ -7,8 +7,6 @@ nav_order: 1.6
 
 # GitHub and GitHub Pages
 
-**Session Recording:** Link will be posted here after Bootcamp. 
-
 Welcome to this Introductory workshop on GitHub Pages. During the workshop, we will walk through the information and tasks detailed on these pages. Use the table of contents to navigate through the workshop.
 
 ____

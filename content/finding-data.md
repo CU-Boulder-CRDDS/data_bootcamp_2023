@@ -7,19 +7,10 @@ nav_order: 1.52
 
 # Finding and Evaluating Data
 
-**Session Recording:** Link will be posted here after Bootcamp. 
+## Instructor
 
-## Instructors
-
-Jordan Wrigley (she/hers)\
-Data Librarian  
-Center for Research Data and Digital Scholarship  
-University of Colorado Boulder Libraries  
-[jordan.wrigley@colorado.edu](mailto:jordan.wrigley@colorado.edu)
+Liz Novosel\
+Computer Science, Mathematics and Social Sciences Librarian\
+University of Colorado Boulder Libraries
 
 
-Aditya Ranganath (he/his)\
-Data Librarian  
-Center for Research Data and Digital Scholarship  
-University of Colorado Boulder Libraries  
-[Aditya.Ranganath@colorado.edu](mailto:Aditya.Ranganath@colorado.edu)

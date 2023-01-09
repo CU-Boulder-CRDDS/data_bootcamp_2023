@@ -9,8 +9,7 @@ nav_order: 1.5
 
 ## Description
 
-As data-based research becomes a common practice, skills in data management, data analysis, and computational thinking are increasingly important for applied researchers. The Graduate Student Research Data Bootcamp will provide incoming and continuing graduate students with a gentle introduction to data and programming-related research tools that will increase their access to cutting-edge methods as they begin their programs and research. Topics covered include reproducible research (especially using containerization tools such as Docker); tools for collaboration and sharing  (using GitHub and GitHub Pages); data analysis and visualization fundamentals in Python and R; and an overview of data publishing and data management.
+As data-based research becomes a common practice, skills in data management, data analysis, and computational thinking are increasingly important for applied researchers. The Center for Research Data and Digital Scholarship's Graduate Student Research Data Bootcamp aims to provide incoming and continuing graduate students with a gentle introduction to data and programming-related research tools that will increase their access to cutting-edge methods as they begin their programs and research. Topics covered include data management and data storage; tools for collaboration and sharing  (using GitHub and GitHub Pages); qualitative data; data ethics; data analysis and visualization fundamentals in Python and R; and an overview of data publishing and data management.
 
-At the conclusion of the Bootcamp, session recordings will be posted to each individual session page, as well as the main [Recordings](wrap-up/recordings.html) page (which is a sub-section of the [Wrap Up and Next Steps](wrap-up.html) page of the Bootcamp website). You can scroll through various session pages and sub-pages using the menu on your left. 
-
+At the conclusion of the Bootcamp, participants are invited to earn a Bootcamp-related microcredential that certifies their competence in the topics that are covered. We will provide more information about this opportunity on the final day of the Bootcamp.
 

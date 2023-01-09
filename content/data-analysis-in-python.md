@@ -7,7 +7,8 @@ nav_order: 1.9
 
 # Data Analysis in Python
 
-**Session Recording:** Link will be posted here after Bootcamp. 
-
 ## Instructor
-Tim Dunn 
+Tim Dunn\
+Research Computing and Visualization Specialist\
+Center for Research Data and Digital Scholarship\
+University of Colorado Boulder Libraries
