@@ -44,13 +44,13 @@ University of Colorado Boulder Libraries
 
 | Time | Content|Presenter(s)|
 | --- | ---|----|
-| 10:00 to 10:25 | [Welcome and Introduction](content/introduction.html)|TBD|
-| 10:30-12:00| Data Management| Adi Ranganath
+| 10:00 to 10:25 | [Welcome and Introduction](content/introduction.html)|Nickoal Eichmann-Kalwara and Adi Ranganath|
+| 10:30-12:00| [Data Management](content/data_management.html)| Adi Ranganath and Dylan Perkins
 | 12:00-12:55| Break|
 | 1:00-2:25| [Finding and Evaluating Data](content/finding-data.html)| Liz Novosel 
-| 2:30 to 3:10| Qualitative and Humanities Data|Nickoal Eichmann-Kalwara
+| 2:30 to 3:10| [Qualitative and Humanities Data](content/qualitative-data.html)|Nickoal Eichmann-Kalwara
 |3:10 to 3:20|Break|
-| 3:20 to 4:00| Ethics and the Social Context of Data| Nickoal Eichmann-Kalwara
+| 3:20 to 4:00| [Ethics and the Social Context of Data](content/census_data_ethics.html)| Nickoal Eichmann-Kalwara
 | 4:00 to 5:00| Optional Installation and Set-up Clinic| CRDDS Team
 
 ### Wednesday, January 11

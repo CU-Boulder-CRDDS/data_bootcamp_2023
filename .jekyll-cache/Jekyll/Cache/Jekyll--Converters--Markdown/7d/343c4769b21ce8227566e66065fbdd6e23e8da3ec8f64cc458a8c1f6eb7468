@@ -1,0 +1,68 @@
+I"s<h1 id="so-you-want-to-get-fancy">So you want to get fancy?</h1>
+<p>I get it!</p>
+
+<h2 id="recommended-workflow">Recommended Workflow:</h2>
+
+<p><strong>First, install Ruby and Jeckyll.</strong></p>
+
+<ul>
+  <li>
+    <p>See these great instructions for <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#on-a-mac-" target="_blank">Mac</a> and <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages#on-windows-" target="_blank">Windows</a>.</p>
+  </li>
+  <li>Also recommended: <a href="https://bundler.io/" target="_blank">Bundler</a>. If you’ve installed Ruby and Jekyll following the instructions linked above, you should be able to install bundler with the following command:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You’ll also want a good text editor…</p>
+  </li>
+  <li><strong>Now</strong>, find a theme you like, go to it’s GitHub repository then…</li>
+</ul>
+
+<p class="label label-step">Step 1</p>
+<p>Clone the repo down to your local machine. From  your terminal:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/pages-themes/hacker.git
+</code></pre></div></div>
+
+<p class="label label-step">Step 2</p>
+<p>Since you’ve installed Ruby, Jekyll, and Bundler, you can spin up your site locally with the following command:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>Now you’re serving your site on your own computer! My default server address is <code class="highlighter-rouge">http://127.0.0.1:4000</code>, but check your prompt and it should tell you. Just open up your browser and go to that address.</p>
+
+<p class="label label-step">Step 3</p>
+<p>Now do whatever you want!</p>
+
+<ul>
+  <li>Rather than the simple site we used in the hands-on example, this site has everything, including all of the styling.</li>
+  <li>The styling is found in the <code class="highlighter-rouge">_sass</code> and <code class="highlighter-rouge">assests/css</code> folder.</li>
+  <li>But note that this is not your standard CSS style sheet, most of the styling is managed by <a href="https://sass-lang.com/" target="_blank">SASS</a>.</li>
+  <li>Open it up in your favorite text editor and don’t forget to <strong>Have Fun!</strong></li>
+</ul>
+
+<h2 id="publish-your-site">Publish your site!</h2>
+<p>Once you’ve finished going to town on your snappy website (and added and committed the changes to your repo), you can put it in a remote repository on GitHub.</p>
+
+<p class="label label-step">Step 1</p>
+<p>Create a new remote repository on GitHub<br />
+<img src="../content/img/pages10.png" alt="New Repo" /></p>
+
+<p class="label label-step">Step 2</p>
+<p>Copy the url of your new remote repository<br />
+<img src="../content/img/pages11.png" alt="Repo URL" /></p>
+
+<p class="label label-step">Step 3</p>
+<p>In your terminal, navigate to the folder containing your site directory/repo. Reset the remote origin to your newly created GitHub repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote set-url origin https://github.com/your-user-name/your-repo.git
+</code></pre></div></div>
+
+<p class="label label-step">Step 4</p>
+<p>Now push your changes up to the remote repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main   
+</code></pre></div></div>
+<p>*might also be <code class="highlighter-rouge">master</code> instead of <code class="highlighter-rouge">main</code></p>
+
+<p class="label label-step">Step 5</p>
+<p>Publish your site in the repository settings as shown in <a href="../GH_Pages_Materials/GH-Pages-Hands-On">previous exercise</a>.</p>
+:ET

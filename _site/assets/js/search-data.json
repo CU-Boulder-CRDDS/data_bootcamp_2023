@@ -7,7 +7,7 @@
   },"1": {
     "doc": "3. Advanced",
     "title": "Recommended Workflow:",
-    "content": "First, install Ruby and Jeckyll. | See these great instructions for Mac and Windows. | Also recommended: Bundler. If you’ve installed Ruby and Jekyll following the instructions linked above, you should be able to install bundler with the following command: gem install jekyll bundler . | You’ll also want a good text editor, such as Atom. | Now, find a theme you like, go to it’s GitHub repository then… | . Step 1 . Clone the repo down to your local machine. From your terminal: . git clone https://github.com/pages-themes/hacker.git . Step 2 . Since you’ve installed Ruby, Jekyll, and Bundler, you can spin up your site locally with the following command: . bundle exec jekyll serve . Now you’re serving your site on your own computer! My default server address is http://127.0.0.1:4000, but check your prompt and it should tell you. Just open up your browser and go to that address. Step 3 . Now do whatever you want! . | Rather than the simple site we used in the hands-on example, this site has everything, including all of the styling. | The styling is found in the _sass and assests/css folder. | But note that this is not your standard CSS style sheet, most of the styling is managed by SASS. | Open it up in your favorite text editor and don’t forget to Have Fun! | . ",
+    "content": "First, install Ruby and Jeckyll. | See these great instructions for Mac and Windows. | Also recommended: Bundler. If you’ve installed Ruby and Jekyll following the instructions linked above, you should be able to install bundler with the following command: gem install jekyll bundler . | You’ll also want a good text editor… . | Now, find a theme you like, go to it’s GitHub repository then… | . Step 1 . Clone the repo down to your local machine. From your terminal: . git clone https://github.com/pages-themes/hacker.git . Step 2 . Since you’ve installed Ruby, Jekyll, and Bundler, you can spin up your site locally with the following command: . bundle exec jekyll serve . Now you’re serving your site on your own computer! My default server address is http://127.0.0.1:4000, but check your prompt and it should tell you. Just open up your browser and go to that address. Step 3 . Now do whatever you want! . | Rather than the simple site we used in the hands-on example, this site has everything, including all of the styling. | The styling is found in the _sass and assests/css folder. | But note that this is not your standard CSS style sheet, most of the styling is managed by SASS. | Open it up in your favorite text editor and don’t forget to Have Fun! | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/GH_Pages_Materials/GH-Pages-Advanced.html#recommended-workflow",
     "relUrl": "/GH_Pages_Materials/GH-Pages-Advanced.html#recommended-workflow"
   },"2": {
@@ -49,7 +49,7 @@
   },"8": {
     "doc": "1. Background Info",
     "title": "A few tech recommendations",
-    "content": ". | Git . | Well, obviously. For the hands on portion of this exercise, you don’t need it… but you should install Git anyway if you don’t have it. | Windows users: Git comes with Git Bash, a Linux-style command prompt (aka “shell” aka “terminal”), which will make life easier. | . | Atom text editor . | If you don’t have a decent text editor, Atom is great and it’s free and open source. | . | . ",
+    "content": ". | Git . | Well, obviously. For the hands on portion of this exercise, you don’t need it… but you should install Git anyway if you don’t have it. | Windows users: Git comes with Git Bash, a Linux-style command prompt (aka “shell” aka “terminal”), which will make life easier. | . | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/GH_Pages_Materials/GH-Pages-Background-Info.html#a-few-tech-recommendations",
     "relUrl": "/GH_Pages_Materials/GH-Pages-Background-Info.html#a-few-tech-recommendations"
   },"9": {
@@ -150,10 +150,10 @@
     "relUrl": "/content/introduction/bootcamp_overview.html"
   },"25": {
     "doc": "Ethics and the Social Context of Data",
-    "title": "Ethics and the Social Context of Data: A Case Study of the United States Census",
-    "content": "Session Recording: Link will be posted here after Bootcamp. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/census_data_ethics.html#ethics-and-the-social-context-of-data-a-case-study-of-the-united-states-census",
-    "relUrl": "/content/census_data_ethics.html#ethics-and-the-social-context-of-data-a-case-study-of-the-united-states-census"
+    "title": "Ethics and the Social Context of Data",
+    "content": " ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/census_data_ethics.html",
+    "relUrl": "/content/census_data_ethics.html"
   },"26": {
     "doc": "Ethics and the Social Context of Data",
     "title": "Instructor",
@@ -163,7 +163,7 @@
   },"27": {
     "doc": "Ethics and the Social Context of Data",
     "title": "Session Synopsis",
-    "content": "In this workshop, we will broadly discuss ways in which researchers can critically engage with data. Through the lens of the US Census, we will explore ethical issues in data, in particular power, privacy, trust, and justice. ",
+    "content": "In this workshop, we will broadly discuss ways in which researchers can critically engage with data, and use it in an ethically informed manner. Topics covered include the relationship between data and power, privacy, trust, and justice. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/census_data_ethics.html#session-synopsis",
     "relUrl": "/content/census_data_ethics.html#session-synopsis"
   },"28": {
@@ -173,348 +173,390 @@
     "url": "http://localhost:4000/data_bootcamp_2023/content/census_data_ethics.html#presentation",
     "relUrl": "/content/census_data_ethics.html#presentation"
   },"29": {
-    "doc": "Ethics and the Social Context of Data",
-    "title": "Ethics and the Social Context of Data",
-    "content": " ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/census_data_ethics.html",
-    "relUrl": "/content/census_data_ethics.html"
-  },"30": {
     "doc": "Code of Conduct",
     "title": "Code of Conduct",
     "content": "We are committed to providing a welcoming and supportive environment for all people, regardless of background or identity. As such, we do not tolerate behavior that is disrespectful to our teachers or learners or that excludes, intimidates, or causes discomfort to others. We do not tolerate discrimination or harassment based on characteristics that include, but are not limited to, gender identity and expression, sexual orientation, disability, physical appearance, body size, citizenship, nationality, ethnic or social origin, pregnancy, familial status, veteran status, genetic information, religion or belief (or lack thereof), membership of a national minority, property, age, education, socio-economic status, technical choices, and experience level. In order to foster a positive and professional learning environment, we encourage the following kinds of behaviors in all Bootcamp-related activities and interactions: . | Use welcoming and inclusive language | Be respectful of different viewpoints and experiences | Gracefully accept constructive criticism | Focus on what is best for the community | Show courtesy and respect towards other community members | . Examples of unacceptable behavior by participants include: . | Written or verbal comments which have the effect of excluding people on the basis of membership of any specific group | Causing someone to fear for their safety, such as through stalking, following, or intimidation | Violent threats or language directed against another person the display of sexual or violent images | Unwelcome sexual attention | Nonconsensual or unwelcome physical contact | Sustained disruption of talks, events or communications insults or put downs | Sexist, racist, homophobic, transphobic, ableist, or exclusionary jokes | Excessive swearing | Incitement to violence, suicide, or self-harm | Continuing to initiate interaction (including photography or recording) with someone after being asked to stop publication of private communication without consent | . Bootcamp participants are required to adhere to this Code of Conduct in all Bootcamp-related activities. If you believe someone has this Code of Conduct in any way, please contact one of the Bootcamp Coordinators. CRDDS reserves the right to expel any participant from the Bootcamp for a Code of Conduct violation. This Code of Conduct has been adapted from the Carpentries’ Code of Conduct. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction/code_of_conduct.html",
     "relUrl": "/content/introduction/code_of_conduct.html"
-  },"31": {
+  },"30": {
     "doc": "Data Analysis in R",
     "title": "Data Analysis in R",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R.html",
     "relUrl": "/content/data-analysis-in-R.html"
-  },"32": {
+  },"31": {
     "doc": "Data Analysis in R",
     "title": "Instructor",
     "content": "Aditya (Adi) Ranganath (he/his) Data Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries Aditya.Ranganath@colorado.edu . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R.html#instructor",
     "relUrl": "/content/data-analysis-in-R.html#instructor"
-  },"33": {
+  },"32": {
     "doc": "Data Analysis in R",
     "title": "Introduction",
     "content": "This session provides a primer on using R and R Studio for data-based research. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R.html#introduction",
     "relUrl": "/content/data-analysis-in-R.html#introduction"
-  },"34": {
+  },"33": {
     "doc": "Data Analysis in Python",
     "title": "Data Analysis in Python",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python.html",
     "relUrl": "/content/data-analysis-in-python.html"
-  },"35": {
+  },"34": {
     "doc": "Data Analysis in Python",
     "title": "Instructor",
     "content": "Tim Dunn Research Computing and Visualization Specialist Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python.html#instructor",
     "relUrl": "/content/data-analysis-in-python.html#instructor"
-  },"36": {
+  },"35": {
     "doc": "Data Publishing and CU Scholar",
     "title": "Data Publishing and and CU Scholar",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-CU-scholar.html#data-publishing-and-and-cu-scholar",
     "relUrl": "/content/data-publishing-CU-scholar.html#data-publishing-and-and-cu-scholar"
-  },"37": {
+  },"36": {
     "doc": "Data Publishing and CU Scholar",
     "title": "Instructor",
-    "content": "Melissa Cantrell Assistant Professor Scholarly Communication Librarian . Introduction . This section provides an overview of resources, requirements, and best practices relevant to data management and data publishing. ",
+    "content": "Melissa Cantrell Assistant Professor Scholarly Communication Librarian . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-CU-scholar.html#instructor",
     "relUrl": "/content/data-publishing-CU-scholar.html#instructor"
+  },"37": {
+    "doc": "Data Publishing and CU Scholar",
+    "title": "Session Synopsis",
+    "content": "This section provides an overview of resources, requirements, and best practices relevant to data management and data publishing. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-CU-scholar.html#session-synopsis",
+    "relUrl": "/content/data-publishing-CU-scholar.html#session-synopsis"
   },"38": {
+    "doc": "Data Publishing and CU Scholar",
+    "title": "Presentation",
+    "content": "If you’d like to access the presentation slide-deck in its own window, please click here. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-CU-scholar.html#presentation",
+    "relUrl": "/content/data-publishing-CU-scholar.html#presentation"
+  },"39": {
     "doc": "Data Publishing and CU Scholar",
     "title": "Data Publishing and CU Scholar",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-CU-scholar.html",
     "relUrl": "/content/data-publishing-CU-scholar.html"
-  },"39": {
+  },"40": {
     "doc": "Data Management",
     "title": "Data Management",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html",
     "relUrl": "/content/data_management.html"
-  },"40": {
-    "doc": "Data Management",
-    "title": "Instructor",
-    "content": "Adi Ranganath . ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#instructor",
-    "relUrl": "/content/data_management.html#instructor"
   },"41": {
     "doc": "Data Management",
+    "title": "Instructors",
+    "content": "Aditya (Adi) Ranganath (he/his) Data Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries Aditya.Ranganath@colorado.edu . Dylan Perkins Associate Director of User Support Center for Research Data and Digital Scholarship University of Colorado Boulder Research Computing . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#instructors",
+    "relUrl": "/content/data_management.html#instructors"
+  },"42": {
+    "doc": "Data Management",
     "title": "Introduction",
-    "content": " ",
+    "content": "This presentation introduces basic concepts, tools, and resources that will help you to store and manage your research data. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#introduction",
     "relUrl": "/content/data_management.html#introduction"
-  },"42": {
+  },"43": {
+    "doc": "Data Management",
+    "title": "Presentation",
+    "content": "If you’d like to access the presentation slide-deck in a separate window, please click here. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/data_management.html#presentation",
+    "relUrl": "/content/data_management.html#presentation"
+  },"44": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": "If you’d like to access the presentation slide-deck in a separate window, please click here. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data_management/data_managment_lesson.html",
     "relUrl": "/content/data_management/data_managment_lesson.html"
-  },"43": {
+  },"45": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": "If you’d like to access the presentation slide-deck in its own window, please click here. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-publishing-cu-scholar/data_publishing_presentation.html",
     "relUrl": "/content/data-publishing-cu-scholar/data_publishing_presentation.html"
-  },"44": {
+  },"46": {
     "doc": "Frequently Asked Questions (FAQs)",
     "title": "Frequently Asked Questions (FAQ)",
     "content": "As the Bootcamp proceeds, please note any of your questions in the Zoom chat. If we note a pattern of recurring questions, we will attempt to address those questions on this page, which will be preserved as a resource for future learners. I’m trying to unzip the file for the python session but getting an inappropriate file or format error . If you are working from a Mac this may be an error in the zip funtion. Check out this solution for unzipping from the terminal: https://softwaretested.com/mac/what-is-error-79-inappropriate-file-type-or-format/. If that’s not working, consider using the virtual environment set up by Research Computing for the Boot Camp. Instructions can be found on this page: https://cu-boulder-crdds.github.io/data_bootcamp/content/data-analysis-in-python/preliminaries.html . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction/faq.html#frequently-asked-questions-faq",
     "relUrl": "/content/introduction/faq.html#frequently-asked-questions-faq"
-  },"45": {
+  },"47": {
     "doc": "Frequently Asked Questions (FAQs)",
     "title": "Frequently Asked Questions (FAQs)",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction/faq.html",
     "relUrl": "/content/introduction/faq.html"
-  },"46": {
+  },"48": {
     "doc": "Finding and Evaluating Data",
     "title": "Finding and Evaluating Data",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding-data.html",
     "relUrl": "/content/finding-data.html"
-  },"47": {
+  },"49": {
     "doc": "Finding and Evaluating Data",
     "title": "Instructor",
     "content": "Liz Novosel Computer Science, Mathematics and Social Sciences Librarian University of Colorado Boulder Libraries . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding-data.html#instructor",
     "relUrl": "/content/finding-data.html#instructor"
-  },"48": {
+  },"50": {
+    "doc": "Finding and Evaluating Data",
+    "title": "Session Synopsis",
+    "content": "This presentation will review strategies and resources that will help you to discover secondary research that is relevant to your research interests and needs. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/finding-data.html#session-synopsis",
+    "relUrl": "/content/finding-data.html#session-synopsis"
+  },"51": {
+    "doc": "Finding and Evaluating Data",
+    "title": "Presentation",
+    "content": "Please click the links below for relevant presentation materials: . | Slide Deck | Activity | Libguide | . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/finding-data.html#presentation",
+    "relUrl": "/content/finding-data.html#presentation"
+  },"52": {
     "doc": "GitHub and GitHub Pages",
     "title": "GitHub and GitHub Pages",
-    "content": "Welcome to this Introductory workshop on GitHub Pages. During the workshop, we will walk through the information and tasks detailed on these pages. Use the table of contents to navigate through the workshop. Presenter . Phil White Earth, Environment &amp; Geospatial Librarian University of Colorado Boulder Libraries philip.white@colorado.edu . | Please create a GitHub account right now if you have yet to do so. | . Goal of this Workshop . The goal of this workshop is to get you started on GitHub Pages. This is not a workshop on Git. We will discuss Git some, but mainly we will focus on GitHub and getting you comfortable with GitHub Pages so you can set up a great looking, free, easy website for your projects or portfolio. Schedule . | Time | Content | . | 10:15 | Introductions | . | 10:20 | Slides: Git/GitHub Background and GH Pages | . | 10:40 | Hands on: Fork it! Spin it! Play! | . | 11:20 | Advanced customization: Themes, running locally, workflows | . | 11:35 | Wrap Up/ Q&amp;A | . Slides . Click on the slides then press the F key for full screen . ",
+    "content": "Welcome to this Introductory workshop on GitHub Pages. During the workshop, we will walk through the information and tasks detailed on these pages. Use the table of contents to navigate through the workshop. Presenter . Phil White Earth, Environment &amp; Geospatial Librarian University of Colorado Boulder Libraries philip.white@colorado.edu . | Please create a GitHub account right now if you have yet to do so. | . Goal of this Workshop . The goal of this workshop is to get you started on GitHub Pages. This is not a workshop on Git. We will discuss Git some, but mainly we will focus on GitHub and getting you comfortable with GitHub Pages so you can set up a great looking, free, easy website for your projects or portfolio. Schedule . | Time | Content | . | 10:00 | Introductions | . | 10:05 | Slides: Git/GitHub Background and GH Pages | . | 10:25 | Hands on: Fork it! Spin it! Play! | . | 11:05 | Advanced customization: Themes, running locally, workflows | . | 11:20 | Wrap Up/ Q&amp;A | . Slides . Click on the slides then press the F key for full screen . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/git_github.html",
     "relUrl": "/content/git_github.html"
-  },"49": {
+  },"53": {
     "doc": "Home",
     "title": "2023 CRDDS Research Data Bootcamp",
     "content": "Sponsored by the Center for Research Data and Digital Scholarship (CRDDS) . ",
     "url": "http://localhost:4000/data_bootcamp_2023/#2023-crdds-research-data-bootcamp",
     "relUrl": "/#2023-crdds-research-data-bootcamp"
-  },"50": {
+  },"54": {
     "doc": "Home",
     "title": "Coordinators",
     "content": "Tim Dunn Research Computing and Visualization Specialist Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Nickoal Eichmann-Kalwara Digital Scholarship Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Liz Novosel Computer Science, Mathematics and Social Sciences Librarian University of Colorado Boulder Libraries . Dylan Perkins Associate Director of User Support Center for Research Data and Digital Scholarship University of Colorado Boulder Research Computing . Kim Popetz Event and Outreach Coordinator Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . Aditya (Adi) Ranganath (he/his) Data Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries Aditya.Ranganath@colorado.edu . ",
     "url": "http://localhost:4000/data_bootcamp_2023/#coordinators",
     "relUrl": "/#coordinators"
-  },"51": {
+  },"55": {
     "doc": "Home",
     "title": "Schedule",
-    "content": "Tuesday, January 10 . | Time | Content | Presenter(s) | . | 10:00 to 10:25 | Welcome and Introduction | TBD | . | 10:30-12:00 | Data Management | Adi Ranganath | . | 12:00-12:55 | Break |   | . | 1:00-2:25 | Finding and Evaluating Data | Liz Novosel | . | 2:30 to 3:10 | Qualitative and Humanities Data | Nickoal Eichmann-Kalwara | . | 3:10 to 3:20 | Break |   | . | 3:20 to 4:00 | Ethics and the Social Context of Data | Nickoal Eichmann-Kalwara | . | 4:00 to 5:00 | Optional Installation and Set-up Clinic | CRDDS Team | . Wednesday, January 11 . | Time | Content | Presenter(s) | . | 10:00 to 11:25 | GitHub and GitHub Pages | Phil White | . | 11:25 to 11:40 | Break |   | . | 11:40 to 12:30 | Data Publishing and CU Scholar | Melissa Cantrell | . | 12:30 to 1:30 | Break |   | . | 1:30 to 3:00 | Data Analysis in R: Session 1 | Adi Ranganath | . | 3:00 to 3:15 | Break |   | . | 3:15 to 5:00 | Data Analysis in R: Session 2 | Adi Ranganath | . Thursday, January 12 . | Time | Content | Presenters(s) | . | 10:00 to 12:00 | Data Analysis in Python: Session 1 | Tim Dunn | . | 12:00 to 1:00 | Break |   | . | 1:00 to 3:00 | Data Analysis in Python: Session 2 | Tim Dunn | . | 3:15 to 3:30 | Wrap Up and Next Steps | TBA | . | 3:30 to 5:00 | Optional Office Hours | CRDDS Team | . Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST) . ",
+    "content": "Tuesday, January 10 . | Time | Content | Presenter(s) | . | 10:00 to 10:25 | Welcome and Introduction | Nickoal Eichmann-Kalwara and Adi Ranganath | . | 10:30-12:00 | Data Management | Adi Ranganath and Dylan Perkins | . | 12:00-12:55 | Break |   | . | 1:00-2:25 | Finding and Evaluating Data | Liz Novosel | . | 2:30 to 3:10 | Qualitative and Humanities Data | Nickoal Eichmann-Kalwara | . | 3:10 to 3:20 | Break |   | . | 3:20 to 4:00 | Ethics and the Social Context of Data | Nickoal Eichmann-Kalwara | . | 4:00 to 5:00 | Optional Installation and Set-up Clinic | CRDDS Team | . Wednesday, January 11 . | Time | Content | Presenter(s) | . | 10:00 to 11:25 | GitHub and GitHub Pages | Phil White | . | 11:25 to 11:40 | Break |   | . | 11:40 to 12:30 | Data Publishing and CU Scholar | Melissa Cantrell | . | 12:30 to 1:30 | Break |   | . | 1:30 to 3:00 | Data Analysis in R: Session 1 | Adi Ranganath | . | 3:00 to 3:15 | Break |   | . | 3:15 to 5:00 | Data Analysis in R: Session 2 | Adi Ranganath | . Thursday, January 12 . | Time | Content | Presenters(s) | . | 10:00 to 12:00 | Data Analysis in Python: Session 1 | Tim Dunn | . | 12:00 to 1:00 | Break |   | . | 1:00 to 3:00 | Data Analysis in Python: Session 2 | Tim Dunn | . | 3:15 to 3:30 | Wrap Up and Next Steps | TBA | . | 3:30 to 5:00 | Optional Office Hours | CRDDS Team | . Actual schedule may vary depending on group needs; all times refer to Mountain Standard Time (MST) . ",
     "url": "http://localhost:4000/data_bootcamp_2023/#schedule",
     "relUrl": "/#schedule"
-  },"52": {
+  },"56": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/",
     "relUrl": "/"
-  },"53": {
+  },"57": {
     "doc": "Introduction",
     "title": "Introduction",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction.html",
     "relUrl": "/content/introduction.html"
-  },"54": {
+  },"58": {
     "doc": "Introduction",
     "title": "Description",
     "content": "As data-based research becomes a common practice, skills in data management, data analysis, and computational thinking are increasingly important for applied researchers. The Center for Research Data and Digital Scholarship’s Graduate Student Research Data Bootcamp aims to provide incoming and continuing graduate students with a gentle introduction to data and programming-related research tools that will increase their access to cutting-edge methods as they begin their programs and research. Topics covered include data management and data storage; tools for collaboration and sharing (using GitHub and GitHub Pages); qualitative data; data ethics; data analysis and visualization fundamentals in Python and R; and an overview of data publishing and data management. At the conclusion of the Bootcamp, participants are invited to earn a Bootcamp-related microcredential that certifies their competence in the topics that are covered. We will provide more information about this opportunity on the final day of the Bootcamp. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction.html#description",
     "relUrl": "/content/introduction.html#description"
-  },"55": {
+  },"59": {
     "doc": "Land Acknowledgement",
     "title": "Land acknowledgement",
     "content": "Before beginning the workshop, we’d like to acknowledge the indigenous lands upon which our institution resides. The University of Colorado Boulder is located on the territories of the Núu-agha-tʉvʉ-pʉ̱ (Ute), Cheyenne, Arapahoe, and Očhéthi Šakówiŋ (Sioux) peoples. 48 contemporary tribal nations are historically tied to the lands that make up Colorado. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction/land-acknowledgement.html#land-acknowledgement",
     "relUrl": "/content/introduction/land-acknowledgement.html#land-acknowledgement"
-  },"56": {
+  },"60": {
     "doc": "Land Acknowledgement",
     "title": "Land Acknowledgement",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/introduction/land-acknowledgement.html",
     "relUrl": "/content/introduction/land-acknowledgement.html"
-  },"57": {
+  },"61": {
     "doc": "Bootcamp Microcredential",
     "title": "Research Data Bootcamp Microcredential",
     "content": "The goal of the Research Data Bootcamp Microcredential is to provide learners with an opportunity to demonstrate literacy in: . | R OR Python programming for data analysis | Critical evaluation of existing data sets and data approaches | . To earn the microcredential certifying literacy in these areas, learners must complete the following: . | Attend all three days of the Research Data Bootcamp | Complete a final project (described below) that demonstrates Bootcamp-specific knowledge and skills | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#research-data-bootcamp-microcredential",
     "relUrl": "/content/wrap-up/microcredential.html#research-data-bootcamp-microcredential"
-  },"58": {
+  },"62": {
     "doc": "Bootcamp Microcredential",
     "title": "Final Project",
     "content": "The final project will be due by the end of Spring Break; to submit the project, push your project code to a dedicated GitHub repository, and send us a link to the repository. Final projects will consist of a portfolio of work hosted on a GitHub repository (you are also encouraged to publish your portfolio materials via GitHub pages; see below). Completed microcredential project portfolios must include the following elements: . | Question or Hypothesis: A statement of a question or hypothesis that you are interested in investigating with data (the question or hypothesis could be relevant to your formal academic interests, but this is by no means necessary). Briefly explain the variables (which often correspond to the columns of a conventional tabular data set) you would need to answer your question or test your hypothesis. | Python or R Code and Analysis Outputs: Find a data set that will allow you to explore the question you formulated in (1). Write one script (either an R script or Python Script) that casts light on your question. For example, you might write code that produces a visualization, implements a statistical test, calculates summary statistics, generates a crosstab, or derives a new data set from an existing one (for example, creating a “tidy” data set from an unstructured one). | Please note that you are welcome to write two scripts (one in R and one in Python) if this would help your learning goals, or you would like to demonstrate proficiency in both. However, you are only required to write one. | Please comment your code so that other researchers (or your future self!) can easily follow and understand your script. | Please remember to cite the data set you use in your analysis, as well as other relevant contextual information in the repository’s Readme. | . | Data set Evaluation: A brief (250-500 words) that evaluates a data set with respect to one of the FAIR principles, and best practices for data publishing more generally. In the write-up, you might reflect on the challenges that a user of the data set might encounter, or suggest changes to the data set’s documentation or metadata with a view towards enhancing its reusability for future users. | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#final-project",
     "relUrl": "/content/wrap-up/microcredential.html#final-project"
-  },"59": {
+  },"63": {
     "doc": "Bootcamp Microcredential",
     "title": "Making Your Microcredential GitHub Repository",
     "content": "Please add files that correspond to the above requirements (a statement of a question or hypothesis, an R script or Python script, and data set evaluation) to a GitHub repository that is specifically created to host your Microcredential project materials. When all of your material is uploaded, please send us a link to your repository by completing this form. We encourage you to write your code in R Markdown or in a Jupyter Notebook, and to publish your files via GitHub Pages, particularly if you plan to submit your microcredential to future employers or mentors (since this will make it easier for others to quickly understand your work, and demonstrate familiarity with important tools that facilitate sharing and reproducibility). If you do publish your code via GitHub Pages, please send us a link to these published files, in addition to the link to your GitHub repository. However, you are not required to publish your code via GitHub Pages. It is perfectly fine to simply push your raw code to a GitHub repository, and send us the link; this will be sufficient to earn the microcredential. This is an example of a raw markdown file that is hosted on GitHub. This is how it looks when it has been published via GitHub Pages. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#making-your-microcredential-github-repository",
     "relUrl": "/content/wrap-up/microcredential.html#making-your-microcredential-github-repository"
-  },"60": {
+  },"64": {
     "doc": "Bootcamp Microcredential",
     "title": "What You Will Receive",
     "content": "If you complete and submit the microcredential project, you will receive a digital certificate that officially certifies your participation in the Bootcamp, and your completion of the associated project. This certificate will include a link to the repository containing your project materials; this will allow those viewing the microcredential (for example, future employers, supervisors, or collaborators) to verify your familiarity with the Bootcamp’s core competencies. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#what-you-will-receive",
     "relUrl": "/content/wrap-up/microcredential.html#what-you-will-receive"
-  },"61": {
+  },"65": {
     "doc": "Bootcamp Microcredential",
     "title": "Examples",
     "content": "To give you a sense of the nature and scope of a possible project, consider the following hypothetical project ideas: . Example 1:Using information from a data set that contains information on the geographic locations of US yoga studios, we might calculate the geographic density of yoga studios with respect to a geographic unit of interest. For our portfolio, we might create a table from this data set (ex. “Census Tracts With Highest Yoga Studio Density per Square Kilometer”), which could be accompanied by a visualization that depicts this variation in density (such as a map or bar chart). The table and visualization, along with the code used to generate them, could be pushed up to your GitHub repository as part of your microcredential portfolio. Example 2:In a data set of snowfall across several ski resorts/areas, we might write code to generate a table of summary statistics (i.e. mean, median, standard deviation etc.) for the snowfall variable (and other variables of interest). Alternatively, we could calculate correlations between variables of interest, or formally test hypotheses using inferential statistics (for example, using a difference of means test or a regression analysis). In this case, the output containing the results of the relevant test(s) (ex. a table of summary statistics, regression table etc.) and the code used to create them would be our portfolio examples. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#examples",
     "relUrl": "/content/wrap-up/microcredential.html#examples"
-  },"62": {
+  },"66": {
     "doc": "Bootcamp Microcredential",
     "title": "Final Project Tips",
     "content": ". | This does not have to be perfect! We are looking for demonstrated literacy and understanding of the concepts and discussions through the Bootcamp. | We are here to help! Please join the end-of-day clinics or reach out to us if you have any questions or are struggling with any aspect of the boot camp or microcredential. Peer support and feedback is an integral part of data work. | Explore relevant online resources In addition to reaching out to us for help, we also encourage you to take this opportunity to troubleshoot possible problems by seeking help from online resources and documentation relevant to R and Python. These resources are substantial, and an important part of the learning process involves self-directed troubleshooting using these resources. | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#final-project-tips",
     "relUrl": "/content/wrap-up/microcredential.html#final-project-tips"
-  },"63": {
+  },"67": {
     "doc": "Bootcamp Microcredential",
     "title": "Turn in Your Final Portfolio Project!",
     "content": "Use this Google Survey link to turn in your project: https://forms.gle/azPH7vFsX7D18frT7 . Be sure to give us your: . | First and last name | Your email (preferably your CU Boulder email but personal email is ok if that’s not possible) | A link to your find Git page or repository project | . Cheers! . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html#turn-in-your-final-portfolio-project",
     "relUrl": "/content/wrap-up/microcredential.html#turn-in-your-final-portfolio-project"
-  },"64": {
+  },"68": {
     "doc": "Bootcamp Microcredential",
     "title": "Bootcamp Microcredential",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up/microcredential.html",
     "relUrl": "/content/wrap-up/microcredential.html"
-  },"65": {
+  },"69": {
     "doc": "Preliminaries",
     "title": "R and R Studio Installation",
     "content": "For instructions on how to download R and R Studio, please see here. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/preliminaries.html#r-and-r-studio-installation",
     "relUrl": "/content/data-analysis-in-R/preliminaries.html#r-and-r-studio-installation"
-  },"66": {
+  },"70": {
     "doc": "Preliminaries",
     "title": "Session data",
     "content": "Before beginning the lesson, please download to a directory on your computer. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/preliminaries.html#session-data",
     "relUrl": "/content/data-analysis-in-R/preliminaries.html#session-data"
-  },"67": {
+  },"71": {
     "doc": "Preliminaries",
     "title": "Preliminaries",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/preliminaries.html",
     "relUrl": "/content/data-analysis-in-R/preliminaries.html"
-  },"68": {
+  },"72": {
     "doc": "Preliminaries",
     "title": "Python Installation",
     "content": "For instructions on how to install Python, please see the following guide. Pay attention to Step 3, particularly if you’re a Windows user! . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html#python-installation",
     "relUrl": "/content/data-analysis-in-python/preliminaries.html#python-installation"
-  },"69": {
+  },"73": {
     "doc": "Preliminaries",
     "title": "Session data",
     "content": "Please download the session’s data from this Open Science Foundation repository. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html#session-data",
     "relUrl": "/content/data-analysis-in-python/preliminaries.html#session-data"
-  },"70": {
+  },"74": {
     "doc": "Preliminaries",
     "title": "Using the CRDDS Research Data Bootcamp JupyterHub:",
     "content": "Step 1: Navigate to https://jupyterhub-crdds-colorado.org . Step 2: Login with your GitHub credentials . Step 3: Click “Launch Server” then choose which notebook type you want to open (rstudio or python), and click “Start”. Step 4: You will now be in the JupyterLab interface. 4A: If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html#using-the-crdds-research-data-bootcamp-jupyterhub",
     "relUrl": "/content/data-analysis-in-python/preliminaries.html#using-the-crdds-research-data-bootcamp-jupyterhub"
-  },"71": {
+  },"75": {
     "doc": "Preliminaries",
     "title": "Preliminaries",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html",
     "relUrl": "/content/data-analysis-in-python/preliminaries.html"
-  },"72": {
+  },"76": {
+    "doc": "Presentation",
+    "title": "Presentation Materials",
+    "content": "Please click the links below for relevant presentation materials: . | Slide Deck | Activity | Libguide | . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/finding_data/presentation.html#presentation-materials",
+    "relUrl": "/content/finding_data/presentation.html#presentation-materials"
+  },"77": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding_data/presentation.html",
     "relUrl": "/content/finding_data/presentation.html"
-  },"73": {
+  },"78": {
     "doc": "Presentation",
     "title": "Presentation",
-    "content": " ",
+    "content": ". | Slide Deck | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative_data/presentation.html",
     "relUrl": "/content/qualitative_data/presentation.html"
-  },"74": {
+  },"79": {
     "doc": "Lesson Plan",
     "title": "Python Lesson Plan",
     "content": "To access the lesson in its own window, please click here. To download the notebook to your computer, click here. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/python_lesson.html#python-lesson-plan",
     "relUrl": "/content/data-analysis-in-python/python_lesson.html#python-lesson-plan"
-  },"75": {
+  },"80": {
     "doc": "Lesson Plan",
     "title": "Lesson Plan",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/python_lesson.html",
     "relUrl": "/content/data-analysis-in-python/python_lesson.html"
-  },"76": {
+  },"81": {
     "doc": "Qualitative and Humanities Data",
     "title": "Qualitative and Humanities Data",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html",
     "relUrl": "/content/qualitative-data.html"
-  },"77": {
+  },"82": {
     "doc": "Qualitative and Humanities Data",
     "title": "Instructor",
     "content": "Nickoal Eichmann-Kalwara Digital Scholarship Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#instructor",
     "relUrl": "/content/qualitative-data.html#instructor"
-  },"78": {
+  },"83": {
+    "doc": "Qualitative and Humanities Data",
+    "title": "Session Synopsis",
+    "content": "This session will introduce interdisciplinary data practices and research lifecycles, explore types and applications of humanities and qualitative data, and and discuss the role of mixed-methods approaches in data-intensive research. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#session-synopsis",
+    "relUrl": "/content/qualitative-data.html#session-synopsis"
+  },"84": {
+    "doc": "Qualitative and Humanities Data",
+    "title": "Presentation",
+    "content": "Slide Deck . ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#presentation",
+    "relUrl": "/content/qualitative-data.html#presentation"
+  },"85": {
     "doc": "R Resources",
     "title": "R Resources",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html",
     "relUrl": "/content/data-analysis-in-R/r-resources.html"
-  },"79": {
+  },"86": {
     "doc": "R Resources",
     "title": "Cheatsheets and Reference Guides",
     "content": ". | dyplyr cheat sheet (data wrangling) | ggplot cheat sheet (data visualization) | R Markdown Cheatsheet (reproducibility and communication of results) | Base R cheat sheet | R Reference Card | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides"
-  },"80": {
+  },"87": {
     "doc": "R Resources",
     "title": "Troubleshooting",
     "content": ". | rseek (search most online R documentation and discussion forums) | R inferno (useful for troubleshooting) | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#troubleshooting",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#troubleshooting"
-  },"81": {
+  },"88": {
     "doc": "R Resources",
     "title": "Data Visualization Guides and Tutorials",
     "content": ". | qplots tutorial | Histograms/Density plots tutorial | Boxplots/Violin plots tutorial | Scatterplots tutorial | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials"
-  },"82": {
+  },"89": {
     "doc": "R Resources",
     "title": "General guides and courses",
     "content": ". | Data Carpentry | R manuals by CRAN | R for Beginners by Emmanuel Paradis | The R Guide by W.J. Owen | An Introduction to R by Longhow Lam | Cookbook for R | Advanced R by Hadley Wickham | R Programming in Coursera | R for Data Science | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#general-guides-and-courses",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#general-guides-and-courses"
-  },"83": {
+  },"90": {
     "doc": "R Resources",
     "title": "Video Tutorials",
     "content": ". | YouTube R channel | Various R videos | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#video-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#video-tutorials"
-  },"84": {
+  },"91": {
     "doc": "Virtual Environments",
     "title": "Virtual Environments",
     "content": "Using the CRDDS Research Data Bootcamp JupyterHub: . Step 1: Navigate to https://jupyterhub-crdds-colorado.org . Step 2: Login with your Github credentials . Step 3: Click “Launch Server” then choose which notebook type you want to open (rstudio or python), and click “Start”. Step 4: You will now be in the JupyterLab interface. 4A: If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. OR: . 4B: If you chose the “rstudio” notebook option, there is no need to click buttons – just manually change “lab” to “rstudio” in the URL bar of your browser. For example: . Change: https://jupyterhub-crdds-colorado.org/user/janedoe/lab/workspaces/auto-F . To: https://jupyterhub-crdds-colorado.org/user/janedoe/rstudio . ….this will take you to the familiar Rstudio interface. All of the packages needed for this workshop have been pre-installed. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html",
     "relUrl": "/content/virtual-environments.html"
-  },"85": {
+  },"92": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap-up and Next Steps",
     "content": "Thank you for joining us these past few days! We hope you’ll join CRDDS for future training opportunities as you explore these ideas further. For more on CRDDS education and training activities, please see here. Please also check follow our events calendar, which is regularly updated. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up.html#wrap-up-and-next-steps",
     "relUrl": "/content/wrap-up.html#wrap-up-and-next-steps"
-  },"86": {
+  },"93": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap Up and Next Steps",
     "content": " ",
