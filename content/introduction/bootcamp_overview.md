@@ -29,7 +29,7 @@ The different sessions of the Bootcamp address themselves to various stages of t
 * The fifth session, on **GitHub and GitHub Pages**, will be taught by CU Boulder Libraries' Map and Earth Sciences Librarian Phil White. It will explore how you can use GitHub and GitHub pages as platforms to collaborate with others, and to share and disseminate your work (*Publish; Preserve*)
 * The sixth session, on **Data Publishing and CU Scholar**, taught by CRDDS Scholarly Communication Librarian Melissa Cantrell, will discuss basic principles of scholarly communication as it relates to data research, and best practices for data archiving (*Plan; Publish; Preserve*)
 * The seventh session, on **Data Analysis in R**, will be taught by Adi Ranganath (data librarian at CRDDS). It aims to introduce R novices to useful principles, tools, and packages for data-based research in R/R Studio (*Develop*).
-* The eighth session, on *Data Analysis in Python*, will be taught by Tim Dunn (Visualization and Research Computing Specialist at CRDDS). It will introduce Python for data research. (*Develop*)
+* The eighth session, on **Data Analysis in Python**, will be taught by Tim Dunn (Visualization and Research Computing Specialist at CRDDS). It will introduce Python for data research. (*Develop*)
 
 
 We will conclude the Bootcamp by discussing how you can continue your learning about the various topics introduced at the Bootcamp by participating in CRDDS programs and activities during the fall semester and beyond. We will also discuss the details of the Bootcamp microcredential, which you can earn by completing a small project that demonstrates your familiarity with the topics presented at the Bootcamp.
