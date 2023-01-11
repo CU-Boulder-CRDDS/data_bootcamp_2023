@@ -421,7 +421,7 @@
   },"70": {
     "doc": "Preliminaries",
     "title": "Session data",
-    "content": "Before beginning the lesson, please download to a directory on your computer. ",
+    "content": "Before beginning the lesson, please download the data to a directory on your computer. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/preliminaries.html#session-data",
     "relUrl": "/content/data-analysis-in-R/preliminaries.html#session-data"
   },"71": {
@@ -547,16 +547,28 @@
   },"91": {
     "doc": "Virtual Environments",
     "title": "Virtual Environments",
-    "content": "Using the CRDDS Research Data Bootcamp JupyterHub: . Step 1: Navigate to https://jupyterhub-crdds-colorado.org . Step 2: Login with your Github credentials . Step 3: Click “Launch Server” then choose which notebook type you want to open (rstudio or python), and click “Start”. Step 4: You will now be in the JupyterLab interface. 4A: If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. OR: . 4B: If you chose the “rstudio” notebook option, there is no need to click buttons – just manually change “lab” to “rstudio” in the URL bar of your browser. For example: . Change: https://jupyterhub-crdds-colorado.org/user/janedoe/lab/workspaces/auto-F . To: https://jupyterhub-crdds-colorado.org/user/janedoe/rstudio . ….this will take you to the familiar Rstudio interface. All of the packages needed for this workshop have been pre-installed. ",
+    "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html",
     "relUrl": "/content/virtual-environments.html"
   },"92": {
+    "doc": "Virtual Environments",
+    "title": "Accessing the RStudio Site:",
+    "content": "Step 1: Navigate to https://rstudio-bootcamp.rc.colorado.edu . Step 2: Login with the credentials provided to you by email. Note: If you are having trouble logging in, there will be someone present at the beginning of the lesson to provide you with login credentials. This will take you to the familiar Rstudio interface. All of the packages needed for this workshop have been pre-installed. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html#accessing-the-rstudio-site",
+    "relUrl": "/content/virtual-environments.html#accessing-the-rstudio-site"
+  },"93": {
+    "doc": "Virtual Environments",
+    "title": "Accessing the JupyterHub Site:",
+    "content": "Step 1: Navigate to https://jupyter-crdds.rc.colorado.edu/ . Step 2: Login with the credentials provided to you by email. Note: If you are having trouble logging in, there will be someone present at the beginning of the lesson to provide you with login credentials. Step 3: Next, choose to open the Python notebook. Step 4: You will now be in the JupyterLab interface. If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. ",
+    "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html#accessing-the-jupyterhub-site",
+    "relUrl": "/content/virtual-environments.html#accessing-the-jupyterhub-site"
+  },"94": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap-up and Next Steps",
     "content": "Thank you for joining us these past few days! We hope you’ll join CRDDS for future training opportunities as you explore these ideas further. For more on CRDDS education and training activities, please see here. Please also check follow our events calendar, which is regularly updated. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up.html#wrap-up-and-next-steps",
     "relUrl": "/content/wrap-up.html#wrap-up-and-next-steps"
-  },"93": {
+  },"95": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap Up and Next Steps",
     "content": " ",
