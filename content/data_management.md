@@ -29,4 +29,6 @@ If you'd like to access the presentation slide-deck in a separate window, please
 
 <iframe src="data_management/data_management.pdf" style="width: 800px; height: 2800px;" frameBorder="0"></iframe>
 
+## Additional Resource
 
+[Guide to DMPTool for CU Boulder Researchers](https://cu-boulder-crdds.github.io/dmptool_guide/)
