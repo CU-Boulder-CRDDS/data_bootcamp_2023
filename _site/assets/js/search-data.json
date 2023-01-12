@@ -438,137 +438,125 @@
     "relUrl": "/content/data-analysis-in-python/preliminaries.html#python-installation"
   },"73": {
     "doc": "Preliminaries",
-    "title": "Session data",
-    "content": "Please download the session’s data from this Open Science Foundation repository. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html#session-data",
-    "relUrl": "/content/data-analysis-in-python/preliminaries.html#session-data"
-  },"74": {
-    "doc": "Preliminaries",
-    "title": "Using the CRDDS Research Data Bootcamp JupyterHub:",
-    "content": "Step 1: Navigate to https://jupyterhub-crdds-colorado.org . Step 2: Login with your GitHub credentials . Step 3: Click “Launch Server” then choose which notebook type you want to open (rstudio or python), and click “Start”. Step 4: You will now be in the JupyterLab interface. 4A: If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. ",
-    "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html#using-the-crdds-research-data-bootcamp-jupyterhub",
-    "relUrl": "/content/data-analysis-in-python/preliminaries.html#using-the-crdds-research-data-bootcamp-jupyterhub"
-  },"75": {
-    "doc": "Preliminaries",
     "title": "Preliminaries",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/preliminaries.html",
     "relUrl": "/content/data-analysis-in-python/preliminaries.html"
-  },"76": {
+  },"74": {
     "doc": "Presentation",
     "title": "Presentation Materials",
     "content": "Please click the links below for relevant presentation materials: . | Slide Deck | Activity | Libguide | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding_data/presentation.html#presentation-materials",
     "relUrl": "/content/finding_data/presentation.html#presentation-materials"
-  },"77": {
+  },"75": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/finding_data/presentation.html",
     "relUrl": "/content/finding_data/presentation.html"
-  },"78": {
+  },"76": {
     "doc": "Presentation",
     "title": "Presentation",
     "content": ". | Slide Deck | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative_data/presentation.html",
     "relUrl": "/content/qualitative_data/presentation.html"
-  },"79": {
+  },"77": {
     "doc": "Lesson Plan",
     "title": "Python Lesson Plan",
-    "content": "To access the lesson in its own window, please click here. To download the notebook to your computer, click here. ",
+    "content": "Instructions on accessing the lesson plans and data will be provided at the beginning of the session. Relevant links to these lesson plans will be posted here after the Bootcamp. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/python_lesson.html#python-lesson-plan",
     "relUrl": "/content/data-analysis-in-python/python_lesson.html#python-lesson-plan"
-  },"80": {
+  },"78": {
     "doc": "Lesson Plan",
     "title": "Lesson Plan",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-python/python_lesson.html",
     "relUrl": "/content/data-analysis-in-python/python_lesson.html"
-  },"81": {
+  },"79": {
     "doc": "Qualitative and Humanities Data",
     "title": "Qualitative and Humanities Data",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html",
     "relUrl": "/content/qualitative-data.html"
-  },"82": {
+  },"80": {
     "doc": "Qualitative and Humanities Data",
     "title": "Instructor",
     "content": "Nickoal Eichmann-Kalwara Digital Scholarship Librarian Center for Research Data and Digital Scholarship University of Colorado Boulder Libraries . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#instructor",
     "relUrl": "/content/qualitative-data.html#instructor"
-  },"83": {
+  },"81": {
     "doc": "Qualitative and Humanities Data",
     "title": "Session Synopsis",
     "content": "This session will introduce interdisciplinary data practices and research lifecycles, explore types and applications of humanities and qualitative data, and and discuss the role of mixed-methods approaches in data-intensive research. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#session-synopsis",
     "relUrl": "/content/qualitative-data.html#session-synopsis"
-  },"84": {
+  },"82": {
     "doc": "Qualitative and Humanities Data",
     "title": "Presentation",
     "content": "Slide Deck . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/qualitative-data.html#presentation",
     "relUrl": "/content/qualitative-data.html#presentation"
-  },"85": {
+  },"83": {
     "doc": "R Resources",
     "title": "R Resources",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html",
     "relUrl": "/content/data-analysis-in-R/r-resources.html"
-  },"86": {
+  },"84": {
     "doc": "R Resources",
     "title": "Cheatsheets and Reference Guides",
     "content": ". | dyplyr cheat sheet (data wrangling) | ggplot cheat sheet (data visualization) | R Markdown Cheatsheet (reproducibility and communication of results) | Base R cheat sheet | R Reference Card | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#cheatsheets-and-reference-guides"
-  },"87": {
+  },"85": {
     "doc": "R Resources",
     "title": "Troubleshooting",
     "content": ". | rseek (search most online R documentation and discussion forums) | R inferno (useful for troubleshooting) | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#troubleshooting",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#troubleshooting"
-  },"88": {
+  },"86": {
     "doc": "R Resources",
     "title": "Data Visualization Guides and Tutorials",
     "content": ". | qplots tutorial | Histograms/Density plots tutorial | Boxplots/Violin plots tutorial | Scatterplots tutorial | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#data-visualization-guides-and-tutorials"
-  },"89": {
+  },"87": {
     "doc": "R Resources",
     "title": "General guides and courses",
     "content": ". | Data Carpentry | R manuals by CRAN | R for Beginners by Emmanuel Paradis | The R Guide by W.J. Owen | An Introduction to R by Longhow Lam | Cookbook for R | Advanced R by Hadley Wickham | R Programming in Coursera | R for Data Science | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#general-guides-and-courses",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#general-guides-and-courses"
-  },"90": {
+  },"88": {
     "doc": "R Resources",
     "title": "Video Tutorials",
     "content": ". | YouTube R channel | Various R videos | . ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/data-analysis-in-R/r-resources.html#video-tutorials",
     "relUrl": "/content/data-analysis-in-R/r-resources.html#video-tutorials"
-  },"91": {
+  },"89": {
     "doc": "Virtual Environments",
     "title": "Virtual Environments",
     "content": " ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html",
     "relUrl": "/content/virtual-environments.html"
-  },"92": {
+  },"90": {
     "doc": "Virtual Environments",
     "title": "Accessing the RStudio Site:",
     "content": "Step 1: Navigate to https://rstudio-bootcamp.rc.colorado.edu . Step 2: Login with the credentials provided to you by email. Note: If you are having trouble logging in, there will be someone present at the beginning of the lesson to provide you with login credentials. This will take you to the familiar Rstudio interface. All of the packages needed for this workshop have been pre-installed. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html#accessing-the-rstudio-site",
     "relUrl": "/content/virtual-environments.html#accessing-the-rstudio-site"
-  },"93": {
+  },"91": {
     "doc": "Virtual Environments",
     "title": "Accessing the JupyterHub Site:",
     "content": "Step 1: Navigate to https://jupyter-crdds.rc.colorado.edu/ . Step 2: Login with the credentials provided to you by email. Note: If you are having trouble logging in, there will be someone present at the beginning of the lesson to provide you with login credentials. Step 3: Next, choose to open the Python notebook. Step 4: You will now be in the JupyterLab interface. If you chose a “python” notebook, you can simply open a *.ipynb file or click the “Python 3” button on the RHS of the screen to open a Jupyter notebook. All of the packages needed for this workshop have been pre-installed. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/virtual-environments.html#accessing-the-jupyterhub-site",
     "relUrl": "/content/virtual-environments.html#accessing-the-jupyterhub-site"
-  },"94": {
+  },"92": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap-up and Next Steps",
     "content": "Thank you for joining us these past few days! We hope you’ll join CRDDS for future training opportunities as you explore these ideas further. For more on CRDDS education and training activities, please see here. Please also check follow our events calendar, which is regularly updated. ",
     "url": "http://localhost:4000/data_bootcamp_2023/content/wrap-up.html#wrap-up-and-next-steps",
     "relUrl": "/content/wrap-up.html#wrap-up-and-next-steps"
-  },"95": {
+  },"93": {
     "doc": "Wrap Up and Next Steps",
     "title": "Wrap Up and Next Steps",
     "content": " ",
