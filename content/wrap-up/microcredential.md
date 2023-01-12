@@ -61,11 +61,11 @@ To give you a sense of the nature and scope of a possible project, consider the 
 3. **Explore relevant online resources** In addition to reaching out to us for help, we also encourage you to take this opportunity to troubleshoot possible problems by seeking help from online resources and documentation relevant to R and Python. These resources are substantial, and an important part of the learning process involves self-directed troubleshooting using these resources.
 
 ## Turn in Your Final Portfolio Project!
-Use this Google Survey link to turn in your project: https://forms.gle/azPH7vFsX7D18frT7
+Use this [Google Survey link](https://docs.google.com/forms/d/e/1FAIpQLScg1zEMAX7CqgimJc53fyBroUagLvjjLPkNMfdR5-8nx0OhcA/viewform?usp=share_link) to turn in your project. 
 
 Be sure to give us your:
 1. First and last name
 2. Your email (preferably your CU Boulder email but personal email is ok if that's not possible)
-3. A link to your find Git page or repository project
+3. A link to your find GitHub page or repository containing your project materials. 
 
 Cheers!
