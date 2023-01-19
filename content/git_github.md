@@ -34,5 +34,3 @@ The goal of this workshop is to get you started on GitHub Pages. This is *not* a
 
 ### Slides  
 <iframe width="625" height="352" frameborder="0" marginheight="0" marginwidth="0" src="slides/GitHub-GH-Pages.html"></iframe> *Click on the slides then press the F key for full screen*
-
-<iframe width="560" height="315" src="https://docs.google.com/forms/d/e/1FAIpQLSfy91XMjfRzEkueK2yNoHe4VHnOd1KOCKU8rHH4QktRu5djRA/viewform" title="Survey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
