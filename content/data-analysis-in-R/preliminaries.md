@@ -13,4 +13,4 @@ For instructions on how to download R and R Studio, please see [here](https://ja
 
 ## Session data
 
-Before beginning the lesson, please [download](data/R_session_data.zip) to a directory on your computer. 
+Before beginning the lesson, please [download](https://www.dropbox.com/sh/wv6yqtw98umsrto/AACwnspy4wR2ER6jI90YB2dra?dl=0) the data to a directory on your computer. 
