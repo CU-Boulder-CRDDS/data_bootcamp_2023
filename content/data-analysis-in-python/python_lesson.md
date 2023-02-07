@@ -6,13 +6,12 @@ nav_order: 1
 has_children: false
 ---
 
-
 ## Python Lesson Plan
 
-Instructions on accessing the lesson plans and data will be provided at the beginning of the session.
+You can access the lesson plans for the Python session by clicking on the links below:
 
-[Part 1](Part_01_Working_with_data.html)
-[Part 2](Part_02_Data_Viz.html)
-[Part 3](Part_03_Working_With_Big_Data.html)
+* [Part 1: Working With Data](Part_01_Working_with_data.html)
+* [Part 2: Data Visualization](Part_02_Data_Viz.html)
+* [Part 3: Big Data](Part_03_Working_With_Big_Data.html)
 
-Relevant links to these lesson plans will be posted here after the Bootcamp. 
+You can also access all of the relevant files (notebooks and workshop data), at this [page](https://osf.io/pt982). 
