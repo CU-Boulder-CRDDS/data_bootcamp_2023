@@ -20,6 +20,9 @@ This session will introduce interdisciplinary data practices and research lifecy
 
 ## Presentation
 
-[Slide Deck](https://docs.google.com/presentation/d/1lj5pk9T8R7PqA1kuMNA9EsXgnD1nosN4EeB3yvW6Q-A/edit#slide=id.p)
+If you’d like to access the presentation slide-deck in its own window, please click [here](qualitative_data/qualitative_presentation.pdf)
+
+<iframe src="qualitative_data/qualitative_presentation.pdf" style="width: 800px; height: 2800px;" frameBorder="0"></iframe>
+
 
 
