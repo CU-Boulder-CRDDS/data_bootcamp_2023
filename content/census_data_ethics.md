@@ -18,5 +18,8 @@ In this workshop, we will broadly discuss ways in which researchers can critical
 
 ## Presentation
 
-[Slides](https://docs.google.com/presentation/d/1EnOE_1ILQmOkOANMJbepUbzFjhSzXPnN3QYD78yvbBA/edit?usp=sharing)
+If you'd like to access the presentation slide-deck in its own window, please click [here](qualitative_presentation.pdf).
+
+<iframe src="qualitative_presentation.pdf" style="width: 800px; height: 2800px;" frameBorder="0"></iframe>
+
 
